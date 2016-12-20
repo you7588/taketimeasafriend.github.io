@@ -10,16 +10,16 @@
 
     
     <entry>
-      <title><![CDATA[测试发布时间]]></title>
-      <url>%2F2016%2F12%2F18%2Ftest%2F</url>
-      <content type="text"><![CDATA[新建一个文件，看看有没有发布时间]]></content>
+      <title><![CDATA[mac 下新建个文章用windows更新]]></title>
+      <url>%2F2016%2F12%2F18%2Fmac%20new%20a%20blog%20to%20test%2F</url>
+      <content type="text"><![CDATA[现在再用Mac更新博客试一下 4:08 to be continued…]]></content>
     </entry>
 
     
     <entry>
-      <title><![CDATA[mac 下新建个文章用windows更新]]></title>
-      <url>%2F2016%2F12%2F18%2Fmac%20new%20a%20blog%20to%20test%2F</url>
-      <content type="text"><![CDATA[现在再用Mac更新博客试一下 4:08 to be continued…]]></content>
+      <title><![CDATA[域名注册及解析]]></title>
+      <url>%2F2016%2F12%2F18%2F%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E8%A7%A3%E6%9E%90%2F</url>
+      <content type="text"><![CDATA[万网购买域名 域名 - 管理 - 基本管理 - DNS修改/创建 - 修改域名DNS为: f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net 网站目录source下创建CNAME无后缀名文件，记事本打开里面填写购买的域名，如: wangwei.party DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-NS…”的记录值，再分别添加记录“@-CNAME-默认-新域名…” 和 “www-CNAME-默认-新域名…” hexo g -d 就OK了]]></content>
     </entry>
 
     
@@ -129,9 +129,9 @@
 
     
     <entry>
-      <title><![CDATA[域名注册及解析]]></title>
-      <url>%2F2016%2F12%2F18%2F%E5%9F%9F%E5%90%8D%E6%B3%A8%E5%86%8C%E8%A7%A3%E6%9E%90%2F</url>
-      <content type="text"><![CDATA[万网购买域名 域名 - 管理 - 基本管理 - DNS修改/创建 - 修改域名DNS为: f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net 网站目录source下创建CNAME无后缀名文件，记事本打开里面填写购买的域名，如: wangwei.party DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-NS…”的记录值，再分别添加记录“@-CNAME-默认-新域名…” 和 “www-CNAME-默认-新域名…” hexo g -d 就OK了]]></content>
+      <title><![CDATA[测试发布时间]]></title>
+      <url>%2F2015%2F08%2F18%2Ftest%2F</url>
+      <content type="text"><![CDATA[新建一个文件，看看有没有发布时间]]></content>
     </entry>
 
     
