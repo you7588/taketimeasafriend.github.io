@@ -85,18 +85,24 @@
 
 
 <meta name="description" content="如果能过目不忘且可温故知新，那就可以不记笔记了，否则就是轻视世界加轻视自己的一条咸鱼 —— 相信我，你会丢掉好多时光。
-备受好评的mpv播放器使用指南(默认配置)播放速度1234567891011121314space - 暂停/播放快：⬆️ - 快进60s➡️ - 快进5s   ] - 1.1倍快速播放&amp;#125; - 2倍快速播放慢：⬇️ - 快退60s⬅️ - 快退5s[ - 0.9倍慢速播">
+系统设置Spotlight搜索文件内容设置system preferences - spotlight 的 “search results” 和 “privacy” 选项配置
+开机启动项
+最一般的：system preferences - users&amp;amp;groups 的 “">
 <meta property="og:type" content="article">
 <meta property="og:title" content="程序员使用Mac笔记">
 <meta property="og:url" content="https://taketimeasafriend.github.io/2017/02/19/mac那点事儿/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="如果能过目不忘且可温故知新，那就可以不记笔记了，否则就是轻视世界加轻视自己的一条咸鱼 —— 相信我，你会丢掉好多时光。
-备受好评的mpv播放器使用指南(默认配置)播放速度1234567891011121314space - 暂停/播放快：⬆️ - 快进60s➡️ - 快进5s   ] - 1.1倍快速播放&amp;#125; - 2倍快速播放慢：⬇️ - 快退60s⬅️ - 快退5s[ - 0.9倍慢速播">
-<meta property="og:updated_time" content="2017-02-19T13:09:44.000Z">
+系统设置Spotlight搜索文件内容设置system preferences - spotlight 的 “search results” 和 “privacy” 选项配置
+开机启动项
+最一般的：system preferences - users&amp;amp;groups 的 “">
+<meta property="og:updated_time" content="2017-03-06T21:54:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="程序员使用Mac笔记">
 <meta name="twitter:description" content="如果能过目不忘且可温故知新，那就可以不记笔记了，否则就是轻视世界加轻视自己的一条咸鱼 —— 相信我，你会丢掉好多时光。
-备受好评的mpv播放器使用指南(默认配置)播放速度1234567891011121314space - 暂停/播放快：⬆️ - 快进60s➡️ - 快进5s   ] - 1.1倍快速播放&amp;#125; - 2倍快速播放慢：⬇️ - 快退60s⬅️ - 快退5s[ - 0.9倍慢速播">
+系统设置Spotlight搜索文件内容设置system preferences - spotlight 的 “search results” 和 “privacy” 选项配置
+开机启动项
+最一般的：system preferences - users&amp;amp;groups 的 “">
 
 
 
@@ -405,6 +411,22 @@
 
       
         <p><strong>如果能过目不忘且可温故知新，那就可以不记笔记了，否则就是轻视世界加轻视自己的一条咸鱼 —— 相信我，你会丢掉好多时光。</strong></p>
+<h2 id="系统设置"><a href="#系统设置" class="headerlink" title="系统设置"></a>系统设置</h2><h3 id="Spotlight搜索文件内容设置"><a href="#Spotlight搜索文件内容设置" class="headerlink" title="Spotlight搜索文件内容设置"></a>Spotlight搜索文件内容设置</h3><p>system preferences - spotlight 的 “search results” 和 “privacy” 选项配置</p>
+<h3 id="开机启动项"><a href="#开机启动项" class="headerlink" title="开机启动项"></a>开机启动项</h3><ol>
+<li>最一般的：system preferences - users&amp;groups 的 “login items”</li>
+<li>Macintosh HD 下：<ul>
+<li>Library 下 Launch… 内的 .plist文件</li>
+<li>System/Library 下 Launch… 内的 .plist文件</li>
+</ul>
+</li>
+</ol>
+<p>第2种情况如下处理：</p>
+<ol>
+<li>删除 .plist文件（不建议，万一以后要用呢）</li>
+<li>执行命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">launchctl unload -w /Library/Launch.../... .plist</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/launchctl.1.html" title="命令参考链接" target="_blank" rel="external">命令参考链接</a></p>
 <h2 id="备受好评的mpv播放器使用指南-默认配置"><a href="#备受好评的mpv播放器使用指南-默认配置" class="headerlink" title="备受好评的mpv播放器使用指南(默认配置)"></a>备受好评的mpv播放器使用指南(默认配置)</h2><h3 id="播放速度"><a href="#播放速度" class="headerlink" title="播放速度"></a>播放速度</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">space - 暂停/播放</div><div class="line"></div><div class="line">快：</div><div class="line">⬆️ - 快进60s</div><div class="line">➡️ - 快进5s   </div><div class="line">] - 1.1倍快速播放</div><div class="line">&#125; - 2倍快速播放</div><div class="line"></div><div class="line">慢：</div><div class="line">⬇️ - 快退60s</div><div class="line">⬅️ - 快退5s</div><div class="line">[ - 0.9倍慢速播放</div><div class="line">&#123; - 0.5倍慢速播放</div><div class="line">Backspace - 重置为正常播放速度</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h3 id="字幕-音轨"><a href="#字幕-音轨" class="headerlink" title="字幕 音轨"></a>字幕 音轨</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">j(J) - 循环（反向）选择字幕文件</div><div class="line"><span class="comment"># - 循环切换音轨</span></div><div class="line">9 - 音量减 2</div><div class="line">0 - 音量加 2</div></pre></td></tr></table></figure>
@@ -588,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#备受好评的mpv播放器使用指南-默认配置"><span class="nav-number">1.</span> <span class="nav-text">备受好评的mpv播放器使用指南(默认配置)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#播放速度"><span class="nav-number">1.1.</span> <span class="nav-text">播放速度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字幕-音轨"><span class="nav-number">1.2.</span> <span class="nav-text">字幕 音轨</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#屏幕相关"><span class="nav-number">1.3.</span> <span class="nav-text">屏幕相关</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级配置（这里才是玩Mac的程序员的G点）"><span class="nav-number">2.</span> <span class="nav-text">高级配置（这里才是玩Mac的程序员的G点）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解码-字幕配置：mpv-conf"><span class="nav-number">2.1.</span> <span class="nav-text">解码 字幕配置：mpv.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键配置：input-conf"><span class="nav-number">2.2.</span> <span class="nav-text">快捷键配置：input.conf</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统设置"><span class="nav-number">1.</span> <span class="nav-text">系统设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Spotlight搜索文件内容设置"><span class="nav-number">1.1.</span> <span class="nav-text">Spotlight搜索文件内容设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动项"><span class="nav-number">1.2.</span> <span class="nav-text">开机启动项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备受好评的mpv播放器使用指南-默认配置"><span class="nav-number">2.</span> <span class="nav-text">备受好评的mpv播放器使用指南(默认配置)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#播放速度"><span class="nav-number">2.1.</span> <span class="nav-text">播放速度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字幕-音轨"><span class="nav-number">2.2.</span> <span class="nav-text">字幕 音轨</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#屏幕相关"><span class="nav-number">2.3.</span> <span class="nav-text">屏幕相关</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级配置（这里才是玩Mac的程序员的G点）"><span class="nav-number">3.</span> <span class="nav-text">高级配置（这里才是玩Mac的程序员的G点）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解码-字幕配置：mpv-conf"><span class="nav-number">3.1.</span> <span class="nav-text">解码 字幕配置：mpv.conf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键配置：input-conf"><span class="nav-number">3.2.</span> <span class="nav-text">快捷键配置：input.conf</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -610,7 +632,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-03-06</span>
+  <span itemprop="copyrightYear">2017-03-07</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
