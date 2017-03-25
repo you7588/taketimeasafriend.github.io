@@ -1537,9 +1537,9 @@ pre .javascript .function {
 }
 #rewardButton span {
   display: inline-block;
-  width: 80px;
+  width: 35px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 50%;
   color: #fff;
   font-weight: 400;
   font-style: normal;
@@ -1553,7 +1553,10 @@ pre .javascript .function {
   background: #f7877f;
 }
 #QR {
-  padding-top: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border: 1px solid #008000;
+  border-radius: 5px;
 }
 #QR a {
   border: 0;
@@ -1583,11 +1586,11 @@ pre .javascript .function {
     transform: scale(0.5, 0.5);
   }
   to {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 @-webkit-keyframes roll {
@@ -1599,11 +1602,11 @@ pre .javascript .function {
     transform: scale(0.5, 0.5);
   }
   to {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 @-o-keyframes roll {
@@ -1615,11 +1618,11 @@ pre .javascript .function {
     transform: scale(0.5, 0.5);
   }
   to {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 @keyframes roll {
@@ -1631,11 +1634,11 @@ pre .javascript .function {
     transform: scale(0.5, 0.5);
   }
   to {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
 .sidebar {
@@ -1795,7 +1798,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb886;
+  background: #ace861;
 }
 .links-of-blogroll {
   font-size: 13px;
