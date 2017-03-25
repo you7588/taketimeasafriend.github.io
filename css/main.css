@@ -1577,6 +1577,11 @@ pre .javascript .function {
   -webkit-animation: roll 1s infinite linear;
   -moz-animation: roll 1s infinite linear;
 }
+#biticon:hover p {
+  animation: roll 1s infinite linear;
+  -webkit-animation: roll 1s infinite linear;
+  -moz-animation: roll 1s infinite linear;
+}
 @-moz-keyframes roll {
   from {
     -webkit-transform: scale(0.5, 0.5);
@@ -1798,7 +1803,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #73ffff;
+  background: #39d4ff;
 }
 .links-of-blogroll {
   font-size: 13px;
