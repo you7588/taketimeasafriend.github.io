@@ -1577,7 +1577,7 @@ pre .javascript .function {
   -webkit-animation: roll 1s infinite linear;
   -moz-animation: roll 1s infinite linear;
 }
-#biticon:hover p {
+#bitcoin:hover p {
   animation: roll 1s infinite linear;
   -webkit-animation: roll 1s infinite linear;
   -moz-animation: roll 1s infinite linear;
@@ -1803,7 +1803,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1dff1c;
+  background: #700d3b;
 }
 .links-of-blogroll {
   font-size: 13px;
