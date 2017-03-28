@@ -27,6 +27,9 @@
 
 
 
+
+
+
   
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
@@ -65,7 +68,7 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -77,7 +80,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon_books.ico?v=5.0.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon_books.ico?v=5.1.0" />
 
 
 
@@ -111,19 +114,19 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 'undefined',
+      userId: '0',
       author: '博主'
     },
     algolia: {
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: "",
-      labels: ""
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
@@ -144,11 +147,13 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   
 
 
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-87405681-1', 'auto');
   ga('send', 'pageview');
 </script>
@@ -171,34 +176,40 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
 
 
+
+
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">时间的朋友</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">时间的朋友</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">把琐碎的时间堆砌成一个伟大的生命。</p>
+      
   </div>
-  <p class="site-subtitle">51World.win</p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -213,7 +224,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            扉页
+            首页
           </a>
         </li>
       
@@ -233,7 +244,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
             
               <i class="menu-item-icon fa fa-fw fa-th-list"></i> <br />
             
-            类别
+            分类
           </a>
         </li>
       
@@ -243,7 +254,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
             
               <i class="menu-item-icon fa fa-fw fa-thumb-tack"></i> <br />
             
-            关键字
+            标签
           </a>
         </li>
       
@@ -253,7 +264,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
             
               <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
             
-            日程
+            日程表
           </a>
         </li>
       
@@ -263,7 +274,17 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
             
               <i class="menu-item-icon fa fa-fw fa-user-plus"></i> <br />
             
-            About
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
           </a>
         </li>
       
@@ -296,12 +317,23 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   
     <div class="site-search">
       
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
 
 
     </div>
@@ -329,20 +361,17 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://taketimeasafriend.github.io/2016/12/18/域名注册解析/">
+    <link itemprop="mainEntityOfPage" href="https://taketimeasafriend.github.io/2016/12/18/域名注册解析/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="喵小哥">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="时间的朋友">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="时间的朋友" src="">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喵小哥">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
-  </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="时间的朋友">
+    </span>
 
     
       <header class="post-header">
@@ -362,6 +391,16 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
         <div class="post-meta">
           <span class="post-time">
             
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-18T13:12:33+08:00">
+                2016-12-18
+              </time>
+            
 
             
 
@@ -369,18 +408,42 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/github/" itemprop="url" rel="index">
+                    <span itemprop="name">github</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
                 <a href="/2016/12/18/域名注册解析/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/12/18/域名注册解析/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2016/12/18/域名注册解析/" itemprop="commentCount"></span>
                 </a>
               </span>
             
-          
-
           
 
           
@@ -390,9 +453,13 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
           
 
           
@@ -462,8 +529,18 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
       
     </div>
 
+    <div>
+      
+        
+
+      
+    </div>
 
     <footer class="post-footer">
+      
+
+      
+        
       
 
       
@@ -476,8 +553,8 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/18/Sex and Seduction-20 Erotic Stories/" rel="prev" title="《Sex and Seduction - 20 Erotic Stories》">
-                《Sex and Seduction - 20 Erotic Stories》 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/18/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -507,7 +584,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
       <div id="disqus_thread">
         <noscript>
           Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         </noscript>
       </div>
     
@@ -539,19 +616,26 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
                src="/uploads/avatar.jpg"
                alt="喵小哥" />
           <p class="site-author-name" itemprop="name">喵小哥</p>
-          <p class="site-description motion-element" itemprop="description">把琐碎的时间堆砌成一个伟大的生命。</p>
+           
+              <p class="site-description motion-element" itemprop="description">一个土木工程出身的码农。</p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">29</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">29</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-categories">
-              <a href="/categories">
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
@@ -559,8 +643,10 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
           
 
           
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">37</span>
                 <span class="site-state-item-name">标签</span>
               </a>
@@ -642,6 +728,8 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
       
 
+      
+
     </div>
   </aside>
 
@@ -663,6 +751,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   <span class="author" itemprop="copyrightHolder">喵小哥</span>
 </div>
 
+
 <div class="powered-by">
   每天进步一点点
 </div>
@@ -680,9 +769,13 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -702,6 +795,9 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
 
   
+
+
+
 
 
 
@@ -727,61 +823,62 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
+  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
 
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'taketimeasafriend';
-      var disqus_identifier = '2016/12/18/域名注册解析/';
 
-      var disqus_title = "域名注册及解析";
+  
 
+    
+      <script id="dsq-count-scr" src="https://taketimeasafriend.disqus.com/count.js" async></script>
+    
 
-      function run_disqus_script(disqus_script) {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-
-      
+    
+      <script type="text/javascript">
         var disqus_config = function () {
-            this.page.url = disqus_url;
-            this.page.identifier = disqus_identifier;
-            this.page.title = disqus_title;
+          this.page.url = 'https://taketimeasafriend.github.io/2016/12/18/域名注册解析/';
+          this.page.identifier = '2016/12/18/域名注册解析/';
+          this.page.title = '域名注册及解析';
         };
-        run_disqus_script('embed.js');
-      
+        var d = document, s = d.createElement('script');
+        s.src = 'https://taketimeasafriend.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
 
-    </script>
+  
+
+
+
+
+	
+
+
+
+
+
   
 
 
@@ -789,7 +886,20 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
 
   
+
+
+
+
+
   
+
+
+
+
+
+
+  
+
   <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
@@ -802,7 +912,9 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
     // monitor main search box;
 
     function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
       $('.popup').toggle();
     }
     // search function;
@@ -906,7 +1018,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
     $('.popup-btn-close').click(function(e){
       $('.popup').hide();
-      $(".popoverlay").remove();
+      $(".local-search-pop-overlay").remove();
       $('body').css('overflow', '');
     });
     $('.popup').click(function(e){
@@ -915,7 +1027,8 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
   </script>
 
 
-  
+
+
 
   
 
@@ -1045,6 +1158,7 @@ DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-
 
   
 
+  
 
 </body>
 </html>
