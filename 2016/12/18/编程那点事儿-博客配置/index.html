@@ -89,13 +89,13 @@
 
 <meta name="description" content="个人建站，难者不会，会者不难。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="域名注册及解析">
-<meta property="og:url" content="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-域名注册解析/index.html">
+<meta property="og:title" content="博客配置遇到的小知识点">
+<meta property="og:url" content="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-博客配置/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="个人建站，难者不会，会者不难。">
-<meta property="og:updated_time" content="2017-03-29T16:05:28.000Z">
+<meta property="og:updated_time" content="2017-03-29T19:44:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="域名注册及解析">
+<meta name="twitter:title" content="博客配置遇到的小知识点">
 <meta name="twitter:description" content="个人建站，难者不会，会者不难。">
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-域名注册解析/"/>
+  <link rel="canonical" href="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-博客配置/"/>
 
 
 
 
 
-  <title> 域名注册及解析 | 时间的朋友 </title>
+  <title> 博客配置遇到的小知识点 | 时间的朋友 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -352,7 +352,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-域名注册解析/">
+    <link itemprop="mainEntityOfPage" href="https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-博客配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喵小哥">
@@ -373,7 +373,7 @@
             
             
               
-                域名注册及解析
+                博客配置遇到的小知识点
               
             
           </h2>
@@ -429,9 +429,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/12/18/编程那点事儿-域名注册解析/#comments" itemprop="discussionUrl">
+                <a href="/2016/12/18/编程那点事儿-博客配置/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2016/12/18/编程那点事儿-域名注册解析/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2016/12/18/编程那点事儿-博客配置/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -439,7 +439,7 @@
 
           
           
-             <span id="/2016/12/18/编程那点事儿-域名注册解析/" class="leancloud_visitors" data-flag-title="域名注册及解析">
+             <span id="/2016/12/18/编程那点事儿-博客配置/" class="leancloud_visitors" data-flag-title="博客配置遇到的小知识点">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -472,13 +472,31 @@
 
 <a id="more"></a>
 <p>利用 gitpages 搭建个人博客，必经的步骤，废话少说，记个笔记先。</p>
-<ol>
+<h2 id="域名注册及解析"><a href="#域名注册及解析" class="headerlink" title="域名注册及解析"></a>域名注册及解析</h2><ol>
 <li>万网购买域名</li>
 <li>域名 - 管理 - 基本管理 - DNS修改/创建 - 修改域名DNS为: f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net</li>
 <li>网站目录source下创建CNAME无后缀名文件，记事本打开里面填写购买的域名，如: wangwei.party</li>
 <li>DNSPOD上域名解析项 - 添加域名 - 点击进去默认会显示两条“@-NS…”的记录值，再分别添加记录“@-CNAME-默认-新域名…” 和 “www-CNAME-默认-新域名…”</li>
 <li>hexo g -d 就OK了</li>
 </ol>
+<h2 id="SSH-Public-Key-公钥"><a href="#SSH-Public-Key-公钥" class="headerlink" title="SSH Public Key 公钥"></a>SSH Public Key 公钥</h2><p>可以这样想像，每一台电脑都有自己的电子签名，那就是你的 SSH Key。而 SSH Public Key 你可以想像是在银行(Github）留的印鉴卡，去银行办事时，跟你的私有 Key 一对，就能确定这是你本人。所以在这里我们要进行一个在 Github 留印鉴卡的动作。</p>
+<ol>
+<li>Terminal 先输入 more ~/.ssh/id_rsa.pub 看看有没有东西<ul>
+<li>有的话 copy 整个内容到步骤 3</li>
+<li>没有的话到步骤 2</li>
+</ul>
+</li>
+<li>如果没有 id_rsa.pub 这个档案, 请输入 ssh-keygen 连按三个回车(enter)<ul>
+<li>然后再输入一次 more ~/.ssh/id_rsa.pub , 把出来的内容 copy 起来</li>
+</ul>
+</li>
+<li>前往 <a href="https://github.com/settings/ssh" target="_blank" rel="external">https://github.com/settings/ssh</a> 绑定</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC...8gkBQHdHf weiwang@weiwangdeiMac.local</div></pre></td></tr></table></figure>
+<h3 id="关于-coding-公钥设置"><a href="#关于-coding-公钥设置" class="headerlink" title="关于 coding 公钥设置"></a>关于 coding 公钥设置</h3><p>同样复制粘贴后，命令输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@git.coding.net</div></pre></td></tr></table></figure>
+<p>成功后将会输出：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Coding.net Tips : [Hello! You<span class="string">'ve connected to Coding.net via SSH. This is a deploy key.]</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -555,18 +573,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/18/社会生活-性格测试/" rel="next" title="什么是性格？你是什么性格？">
-                <i class="fa fa-chevron-left"></i> 什么是性格？你是什么性格？
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/18/编程那点事儿-Sex and Seduction-20 Erotic Stories/" rel="prev" title="Sex and Seduction - 20 Erotic Stories">
-                Sex and Seduction - 20 Erotic Stories <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/18/编程那点事儿-hello world/" rel="prev" title="Hello World( hexo )">
+                Hello World( hexo ) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -621,8 +635,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -738,6 +761,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#域名注册及解析"><span class="nav-number">1.</span> <span class="nav-text">域名注册及解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-Public-Key-公钥"><span class="nav-number">2.</span> <span class="nav-text">SSH Public Key 公钥</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于-coding-公钥设置"><span class="nav-number">2.1.</span> <span class="nav-text">关于 coding 公钥设置</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -874,9 +913,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-域名注册解析/';
-          this.page.identifier = '2016/12/18/编程那点事儿-域名注册解析/';
-          this.page.title = '域名注册及解析';
+          this.page.url = 'https://taketimeasafriend.github.io/2016/12/18/编程那点事儿-博客配置/';
+          this.page.identifier = '2016/12/18/编程那点事儿-博客配置/';
+          this.page.title = '博客配置遇到的小知识点';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://taketimeasafriend.disqus.com/embed.js';
