@@ -430,11 +430,13 @@ body {
 .container {
   position: relative;
   min-height: 100%;
+  font-weight: 200;
 }
 .header-inner {
   margin: 0 auto;
   padding: 35px 0 1px;
   background: #eee;
+  border-radius: 12px;
   width: 100%;
 }
 @media (min-width: 1600px) {
@@ -847,8 +849,9 @@ pre .javascript .function {
 .pagination {
   margin: 120px 0 40px;
   text-align: center;
-  border: 3px solid #eee;
+  border: 1.5px solid #eee;
   border-radius: 15px;
+  background-color: rgba(0,0,0,0.03);
 }
 .page-number-basic,
 .pagination .prev,
@@ -1312,7 +1315,7 @@ pre .javascript .function {
   display: none;
 }
 .posts-expand .post-title {
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
   word-break: break-word;
   font-weight: 400;
@@ -1829,7 +1832,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff6f2;
+  background: #6ff;
 }
 .links-of-blogroll {
   margin-top: 50px;
