@@ -1853,7 +1853,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffb1;
+  background: #75b8ff;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -2703,4 +2703,10 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.text404 {
+  text-align: center;
+}
+.text404 h1 {
+  font-size: 30px;
 }
