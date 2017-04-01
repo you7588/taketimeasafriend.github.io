@@ -1853,7 +1853,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb64e;
+  background: #137905;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3085,4 +3085,26 @@ embed {
 }
 .text404 h1 {
   font-size: 50px;
+}
+.myButton {
+  background-color: #44c767;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 16px 31px;
+  text-decoration: none;
+  width: 60px;
+  height: 25px;
+}
+.myButton:hover {
+  background-color: #44c770;
+  color: #eee;
+}
+.myButton:active {
+  position: relative;
 }
