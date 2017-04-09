@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://taketimeasafriend.github.io/2016/09/09/编程那点事儿-git使用/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
-<meta property="og:updated_time" content="2017-04-04T22:40:25.000Z">
+<meta property="og:updated_time" content="2017-04-05T21:37:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 及 GitHub 使用">
 <meta name="twitter:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
@@ -457,9 +457,10 @@
         <blockquote class="blockquote-center">身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。<br></blockquote>
 
 <a id="more"></a>
-<h2 id="git-初始化"><a href="#git-初始化" class="headerlink" title="git 初始化"></a>git 初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1. 进入文件夹内：</div><div class="line"> $ git config --global user.name <span class="string">"xxx"</span></div><div class="line"> $ git config --global user.email xxx@gmail.com</div><div class="line">2. git init</div><div class="line">3. 文件夹添加文件后：</div><div class="line"> $ git add .</div><div class="line"> $ git commit -m <span class="string">"add a file to test"</span></div></pre></td></tr></table></figure>
+<h2 id="git-初始化"><a href="#git-初始化" class="headerlink" title="git 初始化"></a>git 初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1. 进入文件夹内：</div><div class="line"> $ git config --global user.name <span class="string">"xxx"</span></div><div class="line"> $ git config --global user.email xxx@gmail.com</div><div class="line">2. git init(或新建好工程后，再初始化也行)</div><div class="line">3. 文件夹添加文件后：</div><div class="line"> $ git add .</div><div class="line"> $ git commit -m <span class="string">"add a file to test"</span></div></pre></td></tr></table></figure>
 <h2 id="GitHub仓库和上面的工程及联操作"><a href="#GitHub仓库和上面的工程及联操作" class="headerlink" title="GitHub仓库和上面的工程及联操作"></a>GitHub仓库和上面的工程及联操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. 新建仓库</div><div class="line">2. 复制如下命令在命令行输入：</div><div class="line"> $ git remote add origin git@github.com:taketimeasafriend/gallery.git</div><div class="line"> $ git push -u origin master</div></pre></td></tr></table></figure>
 <h2 id="本地继续操作"><a href="#本地继续操作" class="headerlink" title="本地继续操作"></a>本地继续操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git push origin master (将本地推上GitHub仓库)</div><div class="line">$ git pull origin master（合作的时候养成先pull再操作的好习惯）</div></pre></td></tr></table></figure>
+<h2 id="处理已知的工程"><a href="#处理已知的工程" class="headerlink" title="处理已知的工程"></a>处理已知的工程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. <span class="built_in">clone</span>到本地（如果是别人的，可以fork到自己账户中再操作）</div><div class="line"> $ git <span class="built_in">clone</span> git@github.com:xxx/yyy.git</div><div class="line">2. $ git checkout -b version-x</div><div class="line">3. 编辑后直接add-commit-push</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -557,8 +558,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/10/得到-财富自由之路(一)/" rel="prev" title="通往财富自由之路(一) - 基本素质">
-                通往财富自由之路(一) - 基本素质 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/11/09/编程那点事儿-ruby on rails/" rel="prev" title="ruby on rails 知识点备忘">
+                ruby on rails 知识点备忘 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -638,7 +639,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -649,7 +650,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -660,7 +661,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">42</span>
+                <span class="site-state-item-count">45</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -749,7 +750,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-初始化"><span class="nav-number">1.</span> <span class="nav-text">git 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub仓库和上面的工程及联操作"><span class="nav-number">2.</span> <span class="nav-text">GitHub仓库和上面的工程及联操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地继续操作"><span class="nav-number">3.</span> <span class="nav-text">本地继续操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-初始化"><span class="nav-number">1.</span> <span class="nav-text">git 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub仓库和上面的工程及联操作"><span class="nav-number">2.</span> <span class="nav-text">GitHub仓库和上面的工程及联操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地继续操作"><span class="nav-number">3.</span> <span class="nav-text">本地继续操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理已知的工程"><span class="nav-number">4.</span> <span class="nav-text">处理已知的工程</span></a></li></ol></div>
             
 
           </div>
@@ -773,7 +774,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-04-05</span>
+  <span itemprop="copyrightYear">2017-04-10</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
