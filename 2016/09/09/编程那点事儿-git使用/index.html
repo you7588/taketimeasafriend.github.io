@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://taketimeasafriend.github.io/2016/09/09/编程那点事儿-git使用/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
-<meta property="og:updated_time" content="2017-04-18T10:37:44.000Z">
+<meta property="og:updated_time" content="2017-04-21T07:47:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 及 GitHub 使用">
 <meta name="twitter:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
@@ -461,6 +461,19 @@
 <h2 id="GitHub仓库和上面的工程及联操作"><a href="#GitHub仓库和上面的工程及联操作" class="headerlink" title="GitHub仓库和上面的工程及联操作"></a>GitHub仓库和上面的工程及联操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. 新建仓库</div><div class="line">2. 复制如下命令在命令行输入：</div><div class="line"> $ git remote add origin git@github.com:taketimeasafriend/gallery.git</div><div class="line"> $ git push -u origin master</div></pre></td></tr></table></figure>
 <h2 id="本地继续操作"><a href="#本地继续操作" class="headerlink" title="本地继续操作"></a>本地继续操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git push origin master (将本地推上GitHub仓库)</div><div class="line">$ git pull origin master（合作的时候养成先pull再操作的好习惯）</div></pre></td></tr></table></figure>
 <h2 id="处理已知的工程"><a href="#处理已知的工程" class="headerlink" title="处理已知的工程"></a>处理已知的工程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. <span class="built_in">clone</span>到本地（如果是别人的，可以fork到自己账户中再操作）</div><div class="line"> $ git <span class="built_in">clone</span> git@github.com:xxx/yyy.git</div><div class="line">2. $ git checkout -b version-x</div><div class="line">3. 编辑后直接add-commit-push</div></pre></td></tr></table></figure>
+<h3 id="和另一个账号合作（对方同意你有权操作）"><a href="#和另一个账号合作（对方同意你有权操作）" class="headerlink" title="和另一个账号合作（对方同意你有权操作）"></a>和另一个账号合作（对方同意你有权操作）</h3><ul>
+<li><p>别人的工程: pull request</p>
+</li>
+<li><p>我另一个 GitHub 账号的 Hexo 博客:  </p>
+<ul>
+<li>1-本地 git clone 仓库</li>
+<li>2-hexo init / install hexo-deployer-git –save / g / s</li>
+<li>3-_config 配置 repo: <a href="https://github.com/另一个GitHub" target="_blank" rel="external">https://github.com/另一个GitHub</a>…</li>
+<li>4-hexo d</li>
+<li>5-CNAME 文件等</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -750,7 +763,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-初始化"><span class="nav-number">1.</span> <span class="nav-text">git 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub仓库和上面的工程及联操作"><span class="nav-number">2.</span> <span class="nav-text">GitHub仓库和上面的工程及联操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地继续操作"><span class="nav-number">3.</span> <span class="nav-text">本地继续操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理已知的工程"><span class="nav-number">4.</span> <span class="nav-text">处理已知的工程</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-初始化"><span class="nav-number">1.</span> <span class="nav-text">git 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub仓库和上面的工程及联操作"><span class="nav-number">2.</span> <span class="nav-text">GitHub仓库和上面的工程及联操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地继续操作"><span class="nav-number">3.</span> <span class="nav-text">本地继续操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理已知的工程"><span class="nav-number">4.</span> <span class="nav-text">处理已知的工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#和另一个账号合作（对方同意你有权操作）"><span class="nav-number">4.1.</span> <span class="nav-text">和另一个账号合作（对方同意你有权操作）</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -774,7 +787,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-04-20</span>
+  <span itemprop="copyrightYear">2017-04-21</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
