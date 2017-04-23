@@ -1853,7 +1853,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8ac2ff;
+  background: #8fff6f;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3096,7 +3096,6 @@ embed {
   color: #fff;
   font-family: Arial;
   font-size: 14px;
-  padding: 16px;
   text-decoration: none;
   width: 170px;
 }
@@ -3105,5 +3104,26 @@ embed {
   font-size: 15px;
 }
 .myButton:active {
+  position: relative;
+}
+.myButton-game {
+  background-color: #4467c7;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 12px;
+  margin: 1px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  width: 120px;
+}
+.myButton-game:hover {
+  background-color: #f99;
+  font-size: 15px;
+}
+.myButton-game:active {
   position: relative;
 }
