@@ -1853,7 +1853,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8fff6f;
+  background: #ffec96;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3097,7 +3097,7 @@ embed {
   font-family: Arial;
   font-size: 14px;
   text-decoration: none;
-  width: 170px;
+  width: 120px;
 }
 .myButton:hover {
   background-color: #f99;
