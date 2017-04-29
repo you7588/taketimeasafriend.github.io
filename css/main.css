@@ -1853,7 +1853,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #74931a;
+  background: #e8f2ff;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3126,4 +3126,20 @@ embed {
 }
 .myButton-game:active {
   position: relative;
+}
+.hissoryCounter {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: thin dotted #999;
+}
+.hissoryCounterChild1 {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+.hissoryCounterChild2 {
+  display: inline-block;
+  text-align: center;
+  margin-left: 5px;
 }
