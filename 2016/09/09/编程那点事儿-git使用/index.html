@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://taketimeasafriend.github.io/2016/09/09/编程那点事儿-git使用/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
-<meta property="og:updated_time" content="2017-04-23T17:50:23.000Z">
+<meta property="og:updated_time" content="2017-05-06T01:19:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 及 GitHub 使用">
 <meta name="twitter:description" content="身为程序员，对一些命令必须形成条件反射进而进行肌肉记忆。">
@@ -459,6 +459,9 @@
 <a id="more"></a>
 <h2 id="git-初始化"><a href="#git-初始化" class="headerlink" title="git 初始化"></a>git 初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1. 进入文件夹内：</div><div class="line"> $ git config --global user.name <span class="string">"xxx"</span></div><div class="line"> $ git config --global user.email xxx@gmail.com</div><div class="line">2. git init(或新建好工程后，再初始化也行)</div><div class="line">3. 文件夹添加文件后：</div><div class="line"> $ git add .</div><div class="line"> $ git commit -m <span class="string">"add a file to test"</span></div></pre></td></tr></table></figure>
 <h2 id="GitHub仓库和上面的工程及联操作"><a href="#GitHub仓库和上面的工程及联操作" class="headerlink" title="GitHub仓库和上面的工程及联操作"></a>GitHub仓库和上面的工程及联操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. 新建仓库</div><div class="line">2. 复制如下命令在命令行输入：</div><div class="line"> $ git remote add origin git@github.com:taketimeasafriend/gallery.git</div><div class="line"> $ git push -u origin master</div></pre></td></tr></table></figure>
+<p>PS:<br>如果第2步出现：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fatal: remote origin already exists.</div></pre></td></tr></table></figure></p>
+<p>删除远程Git仓库：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git remote rm origin</div></pre></td></tr></table></figure></p>
+<p>继续1-2步。</p>
 <h2 id="本地继续操作"><a href="#本地继续操作" class="headerlink" title="本地继续操作"></a>本地继续操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git push origin master (将本地推上GitHub仓库)</div><div class="line">$ git pull origin master（合作的时候养成先pull再操作的好习惯）</div></pre></td></tr></table></figure>
 <h2 id="处理已知的工程"><a href="#处理已知的工程" class="headerlink" title="处理已知的工程"></a>处理已知的工程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. <span class="built_in">clone</span>到本地（如果是别人的，可以fork到自己账户中再操作）</div><div class="line"> $ git <span class="built_in">clone</span> git@github.com:xxx/yyy.git</div><div class="line">2. $ git checkout -b version-x</div><div class="line">3. 编辑后直接add-commit-push</div></pre></td></tr></table></figure>
 <h3 id="和另一个账号合作（对方同意你有权操作）"><a href="#和另一个账号合作（对方同意你有权操作）" class="headerlink" title="和另一个账号合作（对方同意你有权操作）"></a>和另一个账号合作（对方同意你有权操作）</h3><ul>
@@ -797,7 +800,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-05-05</span>
+  <span itemprop="copyrightYear">2017-05-06</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
