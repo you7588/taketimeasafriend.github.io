@@ -933,10 +933,22 @@ pre .javascript .function {
 .tag-cloud {
   text-align: center;
   font-size: 16px;
+  text-decoration: none;
 }
 .tag-cloud a {
   display: inline-block;
   margin: 10px;
+  padding: 0px 3px;
+  border-radius: 4px;
+  transition: all 0.6s;
+}
+.tag-cloud a:hover {
+  background-color: #eee;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
 }
 .back-to-top {
   border: 1px solid #fff;
@@ -1197,6 +1209,7 @@ h6 {
   cursor: pointer;
   cursor: zoom-in;
   cursor: -webkit-zoom-in;
+  border-radius: 12px;
 }
 .post-body .image-caption,
 .post-body .figure .caption {
@@ -1204,7 +1217,7 @@ h6 {
   text-align: center;
   font-size: 14px;
   color: #999;
-  font-weight: normal;
+  font-weight: light;
   line-height: 1;
 }
 .post-sticky-flag {
@@ -1920,7 +1933,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f620ff;
+  background: #ff34ba;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -2508,6 +2521,16 @@ h6 {
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+.category-all-page .category-list-item:hover {
+  background-color: #eee;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }
 .category-all-page .category-list-count {
   color: #bbb;
