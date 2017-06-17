@@ -1933,7 +1933,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d1f4ec;
+  background: #fff;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3177,7 +3177,7 @@ embed {
   font-size: 50px;
 }
 .myButton {
-  background-color: #44c767;
+  background-color: #444;
   -moz-border-radius: 28px;
   -webkit-border-radius: 28px;
   border-radius: 12px;
@@ -3187,17 +3187,18 @@ embed {
   font-family: Arial;
   font-size: 14px;
   text-decoration: none;
-  width: 120px;
+  width: 110px;
+  padding: 0.2em 1em;
 }
 .myButton:hover {
-  background-color: #f99;
-  font-size: 15px;
+  opacity: 0.8;
+  color: #fff;
 }
 .myButton:active {
   position: relative;
 }
 .myButton-game {
-  background-color: #4467c7;
+  background-color: #444;
   -moz-border-radius: 28px;
   -webkit-border-radius: 28px;
   border-radius: 12px;
@@ -3208,11 +3209,12 @@ embed {
   font-family: Arial;
   font-size: 14px;
   text-decoration: none;
-  width: 120px;
+  width: 110px;
+  padding: 0.2em 1em;
 }
 .myButton-game:hover {
-  background-color: #f99;
-  font-size: 15px;
+  opacity: 0.8;
+  color: #fff;
 }
 .myButton-game:active {
   position: relative;
@@ -3235,7 +3237,7 @@ embed {
   margin-left: 5px;
 }
 .person-container {
-  height: 300px;
+  height: 200px;
   width: 300px;
   position: absolute;
   right: 0;
@@ -3248,9 +3250,9 @@ embed {
   width: 0;
   color: #000;
   left: 150px;
-  top: 20px;
+  top: 70px;
   transform-origin: 50% 50% 0px;
-  -webkit-animation: sprint 4s infinite ease-in;
+  -webkit-animation: sprint 5s infinite ease-in;
 }
 .person .head:before {
   content: "";
@@ -3469,36 +3471,23 @@ embed {
   border-radius: 8px;
   background-color: #ddd;
 }
-.hexo-img-stream-test {
+.htmleaf-demo {
+  width: 100%;
   text-align: center;
 }
-.hexo-img-stream-test figure {
-  background: #fefefe;
-  box-shadow: 0 2px 4px rgba(34,25,25,0.8);
-  border-radius: 3px;
-  max-width: 25%;
+.htmleaf-demo a {
+  color: #fff;
+  background: #444;
+  text-decoration: none;
   display: inline-block;
-  padding: 0 2%;
+  padding: 0.2em 1em;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-weight: 200;
+  width: 110px;
 }
-.hexo-img-stream-test figure:hover {
-  box-shadow: 0 4px 8px #221919;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.hexo-img-stream-test figure img {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-}
-.hexo-img-stream-test figure figcaption {
-  font-size: 0.9rem;
-  color: #444;
-  line-height: 1.5;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.htmleaf-demo a:hover {
+  opacity: 0.8;
 }
 @-moz-keyframes run {
   0% {
