@@ -1852,21 +1852,21 @@ h6 {
   max-width: 96px;
   height: auto;
   border: 2px solid #333;
-  webkit-transition: 1.4s all;
-  moz-transition: 1.4s all;
-  ms-transition: 1.4s all;
-  transition: 1.4s all;
+  webkit-transition: 0.8s all;
+  moz-transition: 0.8s all;
+  ms-transition: 0.8s all;
+  transition: 0.8s all;
 }
 .site-author-image:hover {
-  background-color: #55dae1;
-  webkit-transform: rotate(360deg) scale(1.1);
-  moz-transform: rotate(360deg) scale(1.1);
-  ms-transform: rotate(360deg) scale(1.1);
-  -webkit-transform: rotate(360deg) scale(1.1);
-  -moz-transform: rotate(360deg) scale(1.1);
-  -ms-transform: rotate(360deg) scale(1.1);
-  -o-transform: rotate(360deg) scale(1.1);
-  transform: rotate(360deg) scale(1.1);
+  background-color: #fff;
+  webkit-transform: rotate(360deg) scale(1.2);
+  moz-transform: rotate(360deg) scale(1.2);
+  ms-transform: rotate(360deg) scale(1.2);
+  -webkit-transform: rotate(360deg) scale(1.2);
+  -moz-transform: rotate(360deg) scale(1.2);
+  -ms-transform: rotate(360deg) scale(1.2);
+  -o-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1948,7 +1948,7 @@ h6 {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #49da58;
+  background: #d44191;
 }
 .links-of-blogroll {
   margin-top: 50px;
@@ -3407,7 +3407,7 @@ embed {
 .cube:hover .rightFace:hover,
 .cube:hover .leftFace:hover,
 .cube:hover .topFace:hover div {
-  background-color: #ffa;
+  background-color: #fff;
 }
 .leftFace {
   -webkit-transform: skew(0deg, 30deg);
@@ -3482,7 +3482,7 @@ embed {
   margin-left: 33%;
   width: 243px;
   text-align: center;
-  border: 1px solid #696;
+  border: 1px solid #aaa;
   border-radius: 8px;
   background-color: #ddd;
 }
@@ -3509,9 +3509,6 @@ embed {
   position: absolute;
   top: 470px;
 }
-#content {
-  text-align: center;
-}
 #gears {
   width: 478px;
   height: 655px;
@@ -3520,7 +3517,7 @@ embed {
   vertical-align: middle;
 }
 #gears-static {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -363px -903px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -363px -903px;
   width: 329px;
   height: 602px;
   position: absolute;
@@ -3534,7 +3531,7 @@ embed {
   box-shadow: 4px 7px 25px 10px rgba(43,36,0,0.36);
 }
 #gear15 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -993px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -993px;
   width: 321px;
   height: 321px;
   position: absolute;
@@ -3556,7 +3553,7 @@ embed {
   top: 186px;
 }
 #gear14 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -856px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -856px;
   width: 87px;
   height: 87px;
   position: absolute;
@@ -3574,7 +3571,7 @@ embed {
   top: 304px;
 }
 #gear13 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -744px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -744px;
   width: 62px;
   height: 62px;
   position: absolute;
@@ -3596,7 +3593,7 @@ embed {
   top: 322px;
 }
 #gear10 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -184px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -184px;
   width: 122px;
   height: 122px;
   position: absolute;
@@ -3618,7 +3615,7 @@ embed {
   top: 18px;
 }
 #gear3 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -1493px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -1493px;
   width: 85px;
   height: 84px;
   position: absolute;
@@ -3640,7 +3637,7 @@ embed {
   top: 31px;
 }
 #gear9 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -371px -280px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -371px -280px;
   width: 234px;
   height: 234px;
   position: absolute;
@@ -3662,7 +3659,7 @@ embed {
   top: 113px;
 }
 #gear7 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -371px 0;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -371px 0;
   width: 108px;
   height: 108px;
   position: absolute;
@@ -3684,7 +3681,7 @@ embed {
   top: 175px;
 }
 #gear6 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -1931px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -1931px;
   width: 134px;
   height: 134px;
   position: absolute;
@@ -3706,7 +3703,7 @@ embed {
   bottom: 230px;
 }
 #gear4 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -1627px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -1627px;
   width: 69px;
   height: 69px;
   position: absolute;
@@ -3718,7 +3715,7 @@ embed {
   animation: rotate-back 10000ms linear infinite;
 }
 #gear12 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -530px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -530px;
   width: 164px;
   height: 164px;
   position: absolute;
@@ -3740,7 +3737,7 @@ embed {
   bottom: 107px;
 }
 #gear11 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -356px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -356px;
   width: 125px;
   height: 124px;
   position: absolute;
@@ -3762,7 +3759,7 @@ embed {
   bottom: 123px;
 }
 #gear8 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -371px -158px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -371px -158px;
   width: 72px;
   height: 72px;
   position: absolute;
@@ -3784,7 +3781,7 @@ embed {
   bottom: 146px;
 }
 #gear1 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 0;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 0;
   width: 135px;
   height: 134px;
   position: absolute;
@@ -3806,7 +3803,7 @@ embed {
   bottom: 130px;
 }
 #gear5 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -1746px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -1746px;
   width: 134px;
   height: 135px;
   position: absolute;
@@ -3828,7 +3825,7 @@ embed {
   top: 127px;
 }
 #gear2 {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat 0 -1364px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat 0 -1364px;
   width: 80px;
   height: 79px;
   position: absolute;
@@ -3840,7 +3837,7 @@ embed {
   animation: rotate-back 10000ms linear infinite alternate;
 }
 #weight {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -371px -564px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -371px -564px;
   width: 34px;
   height: 92px;
   position: absolute;
@@ -3863,7 +3860,7 @@ embed {
   animation: up 10000ms linear infinite alternate;
 }
 #chain-circle {
-  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks.png") no-repeat -371px -706px;
+  background: url("http://ogudt6aal.bkt.clouddn.com/image/FgFnjks-black-white.png") no-repeat -371px -706px;
   width: 146px;
   height: 147px;
   position: absolute;
