@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://taketimeasafriend.github.io/2017/07/05/编程那点事儿-CSS选择器/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="CSS 的 44 个选择器，基本涵盖了 CSS 2 和 CSS 3 的所有规定。">
-<meta property="og:updated_time" content="2017-07-05T07:23:18.000Z">
+<meta property="og:updated_time" content="2017-07-05T17:29:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS 选择器">
 <meta name="twitter:description" content="CSS 的 44 个选择器，基本涵盖了 CSS 2 和 CSS 3 的所有规定。">
@@ -467,7 +467,334 @@
         <blockquote class="blockquote-center">CSS 的 44 个选择器，基本涵盖了 CSS 2 和 CSS 3 的所有规定。<br></blockquote>
 
 <a id="more"></a>
-<p>##</p>
+<p>以下罗列包括 44 个选择器，基本涵盖了 CSS 2 和 CSS 3 的所有规定。</p>
+<h2 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h2><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>通用元素选择器，匹配任何元素</td>
+</tr>
+<tr>
+<td>E</td>
+<td>标签选择器，匹配所有使用E标签的元素</td>
+</tr>
+<tr>
+<td>.info</td>
+<td>class选择器，匹配所有class属性中包含info的元素</td>
+</tr>
+<tr>
+<td>#footer</td>
+<td>id选择器，匹配所有id属性等于footer的元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">* &#123; margin:0; padding:0; &#125;</div><div class="line">p &#123; font-size:2em; &#125;</div><div class="line">.info &#123; background:#ff0; &#125;</div><div class="line">p.info &#123; background:#ff0; &#125;</div><div class="line">p.info.error &#123; color:#900; font-weight:bold; &#125;</div><div class="line">#info &#123; background:#ff0; &#125;</div><div class="line">p#info &#123; background:#ff0; &#125;</div></pre></td></tr></table></figure>
+<h2 id="多元素的组合选择器"><a href="#多元素的组合选择器" class="headerlink" title="多元素的组合选择器"></a>多元素的组合选择器</h2><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E,F</td>
+<td>多元素选择器，同时匹配所有E元素或F元素，E和F之间用逗号分隔</td>
+</tr>
+<tr>
+<td>E F</td>
+<td>后代元素选择器，匹配所有属于E元素后代的F元素，E和F之间用空格分隔</td>
+</tr>
+<tr>
+<td>E &gt; F</td>
+<td>子元素选择器，匹配所有E元素的子元素F</td>
+</tr>
+<tr>
+<td>E + F</td>
+<td>毗邻元素选择器，匹配所有紧随E元素之后的同级元素F</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">div p &#123; color:#f00; &#125;</div><div class="line">#nav li &#123; display:inline; &#125;</div><div class="line">#nav a &#123; font-weight:bold; &#125;</div><div class="line">div &gt; strong &#123; color:#f00; &#125;</div><div class="line">p + p &#123; color:#f00; &#125;</div></pre></td></tr></table></figure>
+<h2 id="CSS-2-1"><a href="#CSS-2-1" class="headerlink" title="CSS 2.1"></a>CSS 2.1</h2><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E[att]</td>
+<td>匹配所有具有att属性的E元素，不考虑它的值。（注意：E在此处可以省略，比如”[cheacked]”。以下同）</td>
+</tr>
+<tr>
+<td>E[att=val]</td>
+<td>匹配所有att属性等于”val”的E元素</td>
+</tr>
+<tr>
+<td>E[att~=val]</td>
+<td>匹配所有att属性具有多个空格分隔的值、其中一个值等于”val”的E元素</td>
+</tr>
+<tr>
+<td>E[att&#124;=val]</td>
+<td>匹配所有att属性具有多个连字号分隔（hyphen-separated）的值、其中一个值以”val”开头的E元素，主要用于lang属性，比如”en”、”en-us”、”en-gb”等等</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">p[title] &#123; color:#f00; &#125;</div><div class="line">div[class=error] &#123; color:#f00; &#125;</div><div class="line">td[headers~=col1] &#123; color:#f00; &#125;</div><div class="line">p[lang|=en] &#123; color:#f00; &#125;</div><div class="line">blockquote[class=quote][cite] &#123; color:#f00; &#125;</div></pre></td></tr></table></figure>
+<h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:first-child</td>
+<td>匹配父元素的第一个子元素</td>
+</tr>
+<tr>
+<td>E:link</td>
+<td>匹配所有未被点击的链接</td>
+</tr>
+<tr>
+<td>E:visited</td>
+<td>匹配所有已被点击的链接</td>
+</tr>
+<tr>
+<td>E:active</td>
+<td>匹配鼠标已经其上按下、还没有释放的E元素</td>
+</tr>
+<tr>
+<td>E:hover</td>
+<td>匹配鼠标悬停其上的E元素</td>
+</tr>
+<tr>
+<td>E:focus</td>
+<td>匹配获得当前焦点的E元素</td>
+</tr>
+<tr>
+<td>E:lang(c)</td>
+<td>匹配lang属性等于c的E元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">p:first-child &#123; font-style:italic; &#125;</div><div class="line">input[type=text]:focus &#123; color:#000; background:#ffe; &#125;</div><div class="line">input[type=text]:focus:hover &#123; background:#fff; &#125;</div><div class="line">q:lang(sv) &#123; quotes: &quot;\201D&quot; &quot;\201D&quot; &quot;\2019&quot; &quot;\2019&quot;; &#125;</div></pre></td></tr></table></figure>
+<h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:first-line</td>
+<td>匹配E元素的第一行</td>
+</tr>
+<tr>
+<td>E:first-letter</td>
+<td>匹配E元素的第一个字母</td>
+</tr>
+<tr>
+<td>E:before</td>
+<td>在E元素之前插入生成的内容</td>
+</tr>
+<tr>
+<td>E:after</td>
+<td>在E元素之后插入生成的内容</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">p:first-line &#123; font-weight:bold; color;#600; &#125;</div><div class="line">.preamble:first-letter &#123; font-size:1.5em; font-weight:bold; &#125;</div><div class="line">.cbb:before &#123; content:&quot;&quot;; display:block; height:17px; width:18px; background:url(top.png) no-repeat 0 0; margin:0 0 0 -18px; &#125;</div><div class="line">a:link:after &#123; content: &quot; (&quot; attr(href) &quot;) &quot;; &#125;</div></pre></td></tr></table></figure>
+<h2 id="CSS-3"><a href="#CSS-3" class="headerlink" title="CSS 3"></a>CSS 3</h2><h3 id="同级元素通用选择器"><a href="#同级元素通用选择器" class="headerlink" title="同级元素通用选择器"></a>同级元素通用选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E ~ F</td>
+<td>匹配任何在E元素之后的同级F元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">p ~ ul &#123; background:#ff0; &#125;</div></pre></td></tr></table></figure>
+<h3 id="属性选择器-1"><a href="#属性选择器-1" class="headerlink" title="属性选择器"></a>属性选择器</h3><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E[att^=”val”]</td>
+<td>属性att的值以”val”开头的元素</td>
+</tr>
+<tr>
+<td>E[att$=”val”]</td>
+<td>属性att的值以”val”结尾的元素</td>
+</tr>
+<tr>
+<td>E[att*=”val”]</td>
+<td>属性att的值包含”val”字符串的元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">div[id^=&quot;nav&quot;] &#123; background:#ff0; &#125;</div></pre></td></tr></table></figure>
+<h3 id="伪类-1"><a href="#伪类-1" class="headerlink" title="伪类"></a>伪类</h3><h4 id="与用户界面有关的伪类"><a href="#与用户界面有关的伪类" class="headerlink" title="与用户界面有关的伪类"></a>与用户界面有关的伪类</h4><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:enabled</td>
+<td>匹配表单中激活的元素</td>
+</tr>
+<tr>
+<td>E:disabled</td>
+<td>匹配表单中禁用的元素</td>
+</tr>
+<tr>
+<td>E:checked</td>
+<td>匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</td>
+</tr>
+<tr>
+<td>E::selection</td>
+<td>匹配用户当前选中的元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">input[type=&quot;text&quot;]:disabled &#123; background:#ddd; &#125;</div></pre></td></tr></table></figure>
+<h4 id="结构性伪类"><a href="#结构性伪类" class="headerlink" title="结构性伪类"></a>结构性伪类</h4><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:root</td>
+<td>匹配文档的根元素，对于HTML文档，就是HTML元素</td>
+</tr>
+<tr>
+<td>E:nth-child(n)</td>
+<td>匹配其父元素的第n个子元素，第一个编号为1</td>
+</tr>
+<tr>
+<td>E:nth-last-child(n)</td>
+<td>匹配其父元素的倒数第n个子元素，第一个编号为1</td>
+</tr>
+<tr>
+<td>E:nth-of-type(n)</td>
+<td>与:nth-child()作用类似，但是仅匹配使用同种标签的元素</td>
+</tr>
+<tr>
+<td>E:nth-last-of-type(n)</td>
+<td>与:nth-last-child() 作用类似，但是仅匹配使用同种标签的元素</td>
+</tr>
+<tr>
+<td>E:last-child</td>
+<td>匹配父元素的最后一个子元素，等同于:nth-last-child(1)</td>
+</tr>
+<tr>
+<td>E:first-of-type</td>
+<td>匹配父元素下使用同种标签的第一个子元素，等同于:nth-of-type(1)</td>
+</tr>
+<tr>
+<td>E:last-of-type</td>
+<td>匹配父元素下使用同种标签的最后一个子元素，等同于:nth-last-of-type(1)</td>
+</tr>
+<tr>
+<td>E:only-child</td>
+<td>匹配父元素下仅有的一个子元素，等同于:first-child:last-child或 :nth-child(1):nth-last-child(1)</td>
+</tr>
+<tr>
+<td>E:only-of-type</td>
+<td>匹配父元素下使用同种标签的唯一一个子元素，等同于:first-of-type:last-of-type或 :nth-of-type(1):nth-last-of-type(1)</td>
+</tr>
+<tr>
+<td>E:empty</td>
+<td>匹配一个不包含任何子元素的元素，注意，文本节点也被看作子元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">p:nth-child(3) &#123; color:#f00; &#125;</div><div class="line">p:nth-child(odd) &#123; color:#f00; &#125;</div><div class="line">p:nth-child(even) &#123; color:#f00; &#125;</div><div class="line">p:nth-child(3n+0) &#123; color:#f00; &#125;</div><div class="line">p:nth-child(3n) &#123; color:#f00; &#125;</div><div class="line">tr:nth-child(2n+11) &#123; background:#ff0; &#125;</div><div class="line">tr:nth-last-child(2) &#123; background:#ff0; &#125;</div><div class="line">p:last-child &#123; background:#ff0; &#125;</div><div class="line">p:only-child &#123; background:#ff0; &#125;</div><div class="line">p:empty &#123; background:#ff0; &#125;</div></pre></td></tr></table></figure>
+<h4 id="反选伪类"><a href="#反选伪类" class="headerlink" title="反选伪类"></a>反选伪类</h4><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:not(s)</td>
+<td>匹配不符合当前选择器的任何元素</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:not(p) &#123; border:1px solid #ccc; &#125;</div></pre></td></tr></table></figure>
+<h4 id="target-伪类"><a href="#target-伪类" class="headerlink" title=":target 伪类"></a>:target 伪类</h4><table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:target</td>
+<td>匹配文档中特定”id”点击后的效果</td>
+</tr>
+</tbody>
+</table>
+<p>举例：</p>
+<p>请参看HTML DOG上关于该选择器的 <a href="http://htmldog.com/articles/suckerfish/target/" title="详细解释" target="_blank" rel="external">详细解释</a> 和 <a href="http://htmldog.com/articles/suckerfish/target/example/" title="实例" target="_blank" rel="external">实例</a>。</p>
+<h2 id="拓展：xpath-路径表达式"><a href="#拓展：xpath-路径表达式" class="headerlink" title="拓展：xpath 路径表达式"></a>拓展：xpath 路径表达式</h2><p>简单说，<strong>xpath 就是选择 XML 文件中节点的方法</strong>。</p>
+<p>所谓节点（node），就是 XML 文件的最小构成单位，一共分成 7 种。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">- element（元素节点）</div><div class="line">- attribute（属性节点）</div><div class="line">- text （文本节点）</div><div class="line">- namespace （名称空间节点）</div><div class="line">- processing-instruction （处理命令节点）</div><div class="line">- comment （注释节点）</div><div class="line">- root （根节点）</div></pre></td></tr></table></figure>
+<p>xpath 可以用来选择这 7 种节点。下面只涉及最常用的第一种 element（元素节点），因此可以将下文中的节点和元素视为同义词。</p>
+<h3 id="xpath-表达式的基本格式"><a href="#xpath-表达式的基本格式" class="headerlink" title="xpath 表达式的基本格式"></a>xpath 表达式的基本格式</h3><p>xpath 通过 “路径表达式”（Path Expression）来选择节点。在形式上，”路径表达式” 与传统的文件系统非常类似。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"># 斜杠（/）作为路径内部的分割符。</div><div class="line"></div><div class="line"># 同一个节点有绝对路径和相对路径两种写法。</div><div class="line"></div><div class="line"># 绝对路径（absolute path）必须用&quot;/&quot;起首，后面紧跟根节点，比如/step/step/...。</div><div class="line"></div><div class="line"># 相对路径（relative path）则是除了绝对路径以外的其他写法，比如 step/step，也就是不使用&quot;/&quot;起首。</div><div class="line"></div><div class="line"># &quot;.&quot;表示当前节点。</div><div class="line"></div><div class="line"># &quot;..&quot;表示当前节点的父节点</div></pre></td></tr></table></figure>
+<h3 id="选择节点的基本规则"><a href="#选择节点的基本规则" class="headerlink" title="选择节点的基本规则"></a>选择节点的基本规则</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">- nodename（节点名称）：表示选择该节点的所有子节点</div><div class="line"></div><div class="line">- &quot;/&quot;：表示选择根节点</div><div class="line"></div><div class="line">- &quot;//&quot;：表示选择任意位置的某个节点</div><div class="line"></div><div class="line">- &quot;@&quot;： 表示选择某个属性</div></pre></td></tr></table></figure>
+<h3 id="选择节点的实例"><a href="#选择节点的实例" class="headerlink" title="选择节点的实例"></a>选择节点的实例</h3><p>先看一个XML实例文档：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</div><div class="line">&lt;bookstore&gt;</div><div class="line">  &lt;book&gt;</div><div class="line">    &lt;title lang=&quot;eng&quot;&gt;Harry Potter&lt;/title&gt;</div><div class="line">    &lt;price&gt;29.99&lt;/price&gt;</div><div class="line">  &lt;/book&gt;</div><div class="line">  &lt;book&gt;</div><div class="line">    &lt;title lang=&quot;eng&quot;&gt;Learning XML&lt;/title&gt;</div><div class="line">    &lt;price&gt;39.95&lt;/price&gt;</div><div class="line">  &lt;/book&gt;</div><div class="line">&lt;/bookstore&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">bookstore ：选取 bookstore 元素的所有子节点。</div><div class="line"></div><div class="line">/bookstore ：选取根节点bookstore，这是绝对路径写法。</div><div class="line"></div><div class="line">bookstore/book ：选取所有属于 bookstore 的子元素的 book元素，这是相对路径写法。</div><div class="line"></div><div class="line">//book ：选择所有 book 子元素，而不管它们在文档中的位置。</div><div class="line"></div><div class="line">bookstore//book ：选择所有属于 bookstore 元素的后代的 book 元素，而不管它们位于 bookstore 之下的什么位置。</div><div class="line"></div><div class="line">//@lang ：选取所有名为 lang 的属性。</div></pre></td></tr></table></figure>
+<h3 id="xpath-的谓语条件（Predicate）"><a href="#xpath-的谓语条件（Predicate）" class="headerlink" title="xpath 的谓语条件（Predicate）"></a>xpath 的谓语条件（Predicate）</h3><p>所谓 “谓语条件”，就是对路径表达式的附加条件。</p>
+<p>所有的条件，都写在方括号”[]”中，表示对节点进行进一步的筛选。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">/bookstore/book[1] ：表示选择bookstore的第一个book子元素。</div><div class="line"></div><div class="line">/bookstore/book[last()] ：表示选择bookstore的最后一个book子元素。</div><div class="line"></div><div class="line">/bookstore/book[last()-1] ：表示选择bookstore的倒数第二个book子元素。</div><div class="line"></div><div class="line">/bookstore/book[position()&lt;3] ：表示选择bookstore的前两个book子元素。</div><div class="line"></div><div class="line">//title[@lang] ：表示选择所有具有lang属性的title节点。</div><div class="line"></div><div class="line">//title[@lang=&apos;eng&apos;] ：表示选择所有lang属性的值等于&quot;eng&quot;的title节点。</div><div class="line"></div><div class="line">/bookstore/book[price] ：表示选择bookstore的book子元素，且被选中的book元素必须带有price子元素。</div><div class="line"></div><div class="line">/bookstore/book[price&gt;35.00] ：表示选择bookstore的book子元素，且被选中的book元素的price子元素值必须大于35。</div><div class="line"></div><div class="line">/bookstore/book[price&gt;35.00]/title ：表示在例14结果集中，选择title子元素。</div><div class="line"></div><div class="line">/bookstore/book/price[.&gt;35.00] ：表示选择值大于35的&quot;/bookstore/book&quot;的price子元素。</div></pre></td></tr></table></figure>
+<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># &quot;*&quot;表示匹配任何元素节点。</div><div class="line"></div><div class="line"># &quot;@*&quot;表示匹配任何属性值。</div><div class="line"></div><div class="line"># node()表示匹配任何类型的节点。</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//* ：选择文档中的所有元素节点。</div><div class="line"></div><div class="line">/*/* ：表示选择所有第二层的元素节点。</div><div class="line"></div><div class="line">/bookstore/* ：表示选择bookstore的所有元素子节点。</div><div class="line"></div><div class="line">//title[@*] ：表示选择所有带有属性的title元素。</div></pre></td></tr></table></figure>
+<h3 id="选择多个路径"><a href="#选择多个路径" class="headerlink" title="选择多个路径"></a>选择多个路径</h3><p>用”|”选择多个并列的路径。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">//book/title | //book/price ：表示同时选择book元素的title子元素和price子元素。</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本文参考 <a href="http://www.ruanyifeng.com/blog/" title="阮一峰博客" target="_blank" rel="external">阮一峰博客</a> 整理。</p>
 
       
     </div>
@@ -623,8 +950,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -751,6 +1087,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.</span> <span class="nav-text">基本选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多元素的组合选择器"><span class="nav-number">2.</span> <span class="nav-text">多元素的组合选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-2-1"><span class="nav-number">3.</span> <span class="nav-text">CSS 2.1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器"><span class="nav-number">3.1.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类"><span class="nav-number">3.2.</span> <span class="nav-text">伪类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪元素"><span class="nav-number">3.3.</span> <span class="nav-text">伪元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS-3"><span class="nav-number">4.</span> <span class="nav-text">CSS 3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#同级元素通用选择器"><span class="nav-number">4.1.</span> <span class="nav-text">同级元素通用选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器-1"><span class="nav-number">4.2.</span> <span class="nav-text">属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类-1"><span class="nav-number">4.3.</span> <span class="nav-text">伪类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#与用户界面有关的伪类"><span class="nav-number">4.3.1.</span> <span class="nav-text">与用户界面有关的伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结构性伪类"><span class="nav-number">4.3.2.</span> <span class="nav-text">结构性伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#反选伪类"><span class="nav-number">4.3.3.</span> <span class="nav-text">反选伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#target-伪类"><span class="nav-number">4.3.4.</span> <span class="nav-text">:target 伪类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展：xpath-路径表达式"><span class="nav-number">5.</span> <span class="nav-text">拓展：xpath 路径表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#xpath-表达式的基本格式"><span class="nav-number">5.1.</span> <span class="nav-text">xpath 表达式的基本格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择节点的基本规则"><span class="nav-number">5.2.</span> <span class="nav-text">选择节点的基本规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择节点的实例"><span class="nav-number">5.3.</span> <span class="nav-text">选择节点的实例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#xpath-的谓语条件（Predicate）"><span class="nav-number">5.4.</span> <span class="nav-text">xpath 的谓语条件（Predicate）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通配符"><span class="nav-number">5.5.</span> <span class="nav-text">通配符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择多个路径"><span class="nav-number">5.6.</span> <span class="nav-text">选择多个路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">6.</span> <span class="nav-text">说明</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -768,7 +1120,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-07-05</span>
+  <span itemprop="copyrightYear">2017-07-06</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
