@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://taketimeasafriend.github.io/2017/07/04/编程那点事儿-Head First jQuery/index.html">
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="jQuery 的基本设计思想，就是 “选择某个网页元素，然后对其进行某种操作”。">
-<meta property="og:updated_time" content="2017-07-05T03:44:46.000Z">
+<meta property="og:updated_time" content="2017-07-05T07:20:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First jQuery">
 <meta name="twitter:description" content="jQuery 的基本设计思想，就是 “选择某个网页元素，然后对其进行某种操作”。">
@@ -468,6 +468,8 @@
 
 <a id="more"></a>
 <p>jQuery 的基本设计思想和主要用法，就是 “选择某个网页元素，然后对其进行某种操作”。这是它区别于其他 Javascript 库的根本特点。</p>
+<h2 id="写在前面：CSS选择器"><a href="#写在前面：CSS选择器" class="headerlink" title="写在前面：CSS选择器"></a>写在前面：CSS选择器</h2><p><strong>选择某个网页元素</strong>，CSS 选择器是制作网页效果的重要组成部分。</p>
+<p>详戳 <a href="&quot;CSS 的44个选择器&quot;">CSS 的44个选择器</a> 。</p>
 <h2 id="选择网页元素"><a href="#选择网页元素" class="headerlink" title="选择网页元素"></a>选择网页元素</h2><p>使用jQuery的第一步，往往是将一个选择表达式，放进 <strong>构造函数 jQuery()（简写为$）</strong>，然后得到被选中的元素。</p>
 <ul>
 <li>选择表达式可以是 CSS 选择器：</li>
@@ -732,7 +734,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">62</span>
+                <span class="site-state-item-count">63</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -754,7 +756,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">71</span>
+                <span class="site-state-item-count">72</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -852,7 +854,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择网页元素"><span class="nav-number">1.</span> <span class="nav-text">选择网页元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变结果集"><span class="nav-number">2.</span> <span class="nav-text">改变结果集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链式操作"><span class="nav-number">3.</span> <span class="nav-text">链式操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元素的具体操作（取值赋值-移动-复制、删除和创建）"><span class="nav-number">4.</span> <span class="nav-text">元素的具体操作（取值赋值 - 移动 - 复制、删除和创建）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的取值和赋值"><span class="nav-number">4.1.</span> <span class="nav-text">元素的取值和赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的移动"><span class="nav-number">4.2.</span> <span class="nav-text">元素的移动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的复制、删除和创建"><span class="nav-number">4.3.</span> <span class="nav-text">元素的复制、删除和创建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具方法"><span class="nav-number">5.</span> <span class="nav-text">工具方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件操作"><span class="nav-number">6.</span> <span class="nav-text">事件操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊效果"><span class="nav-number">7.</span> <span class="nav-text">特殊效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">8.</span> <span class="nav-text">说明</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面：CSS选择器"><span class="nav-number">1.</span> <span class="nav-text">写在前面：CSS选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择网页元素"><span class="nav-number">2.</span> <span class="nav-text">选择网页元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变结果集"><span class="nav-number">3.</span> <span class="nav-text">改变结果集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链式操作"><span class="nav-number">4.</span> <span class="nav-text">链式操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元素的具体操作（取值赋值-移动-复制、删除和创建）"><span class="nav-number">5.</span> <span class="nav-text">元素的具体操作（取值赋值 - 移动 - 复制、删除和创建）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的取值和赋值"><span class="nav-number">5.1.</span> <span class="nav-text">元素的取值和赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的移动"><span class="nav-number">5.2.</span> <span class="nav-text">元素的移动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素的复制、删除和创建"><span class="nav-number">5.3.</span> <span class="nav-text">元素的复制、删除和创建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具方法"><span class="nav-number">6.</span> <span class="nav-text">工具方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件操作"><span class="nav-number">7.</span> <span class="nav-text">事件操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊效果"><span class="nav-number">8.</span> <span class="nav-text">特殊效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">9.</span> <span class="nav-text">说明</span></a></li></ol></div>
             
 
           </div>
