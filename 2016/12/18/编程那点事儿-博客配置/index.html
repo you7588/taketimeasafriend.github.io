@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="配置,github," />
+  <meta name="keywords" content="github,配置," />
 
 
 
@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="时间的朋友">
 <meta property="og:description" content="个人建站，难者不会，会者不难。">
 <meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/hexo-next.png">
-<meta property="og:updated_time" content="2017-04-22T09:13:32.000Z">
+<meta property="og:updated_time" content="2017-07-23T20:10:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客配置遇到的小知识点">
 <meta name="twitter:description" content="个人建站，难者不会，会者不难。">
@@ -467,7 +467,7 @@
         <blockquote class="blockquote-center">个人建站，难者不会，会者不难。<br></blockquote>
 
 <a id="more"></a>
-<p>利用 gitpages 搭建个人博客，必经的步骤，废话少说，记个笔记先。</p>
+<p>利用 gitpages 和 hexo 搭建个人博客，必经的步骤，废话少说，记个笔记先。</p>
 <h2 id="域名注册及解析"><a href="#域名注册及解析" class="headerlink" title="域名注册及解析"></a>域名注册及解析</h2><ol>
 <li>万网购买域名</li>
 <li>域名 - 管理 - 基本管理 - DNS修改/创建 - 修改域名DNS为: f1g1ns1.dnspod.net 和 f1g1ns2.dnspod.net</li>
@@ -496,7 +496,12 @@
 <h2 id="hexo-的主题"><a href="#hexo-的主题" class="headerlink" title="hexo 的主题"></a>hexo 的主题</h2><h3 id="下载已知主题"><a href="#下载已知主题" class="headerlink" title="下载已知主题"></a>下载已知主题</h3><p>博客目录下:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/user/hexo-theme-xxx themes/xxx</div></pre></td></tr></table></figure></p>
 <h3 id="关于主题-如-NexT-UI设计"><a href="#关于主题-如-NexT-UI设计" class="headerlink" title="关于主题(如 NexT )UI设计"></a>关于主题(如 NexT )UI设计</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">..next/<span class="built_in">source</span>/css/_common/outline/...</div></pre></td></tr></table></figure>
 <p><img src="http://ogudt6aal.bkt.clouddn.com/image/hexo-next.png" alt="next theme tree" title="next theme tree">  </p>
-<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><p><a href="http://tengj.top/tags/hexo/" target="_blank" rel="external">http://tengj.top/tags/hexo/</a>  下的“将hexo博客同时托管到github和coding”， “hexo提交搜索引擎（百度+谷歌）”， “hexo安装统计插件”</p>
+<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><p><a href="http://tengj.top/tags/hexo/" target="_blank" rel="external">http://tengj.top/tags/hexo/</a>  下的“将hexo博客同时托管到github和coding”， “hexo提交搜索引擎（百度+谷歌）”， “hexo安装统计插件” 等。</p>
+<h3 id="可能遇到的-bug"><a href="#可能遇到的-bug" class="headerlink" title="可能遇到的 bug"></a>可能遇到的 bug</h3><ul>
+<li>Error: Cannot find module ‘./build/default/DTraceProviderBindings’<blockquote><br>原因：node 版本不对应，重新安装一些对应的包即可。<br>解决方法： <code>(sudo) npm install hexo-cli -g</code><br></blockquote></li>
+<li>(node:72404) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.<blockquote><br>原因：最新 node 遗弃了 SyncWriteStream 方法。<br>相关链接：<a href="https://github.com/nodejs/node/pull/10467" target="_blank" rel="external">https://github.com/nodejs/node/pull/10467</a>  <a href="http://alinode.aliyun.com/blog/42" target="_blank" rel="external">http://alinode.aliyun.com/blog/42</a><br>貌似不影响使用。<br></blockquote>
+</li>
+</ul>
 
       
     </div>
@@ -573,9 +578,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/配置/" rel="tag"># 配置</a>
-          
             <a href="/tags/github/" rel="tag"># github</a>
+          
+            <a href="/tags/配置/" rel="tag"># 配置</a>
           
         </div>
       
@@ -588,8 +593,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/18/0-草稿/" rel="next" title="这是一张草稿纸">
-                <i class="fa fa-chevron-left"></i> 这是一张草稿纸
+              <a href="/2016/12/10/得到-财富自由之路(一)/" rel="next" title="通往财富自由之路(一) - 基本素质">
+                <i class="fa fa-chevron-left"></i> 通往财富自由之路(一) - 基本素质
               </a>
             
           </div>
@@ -598,8 +603,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/18/新生大学-游戏战胜拖延症/" rel="prev" title="游戏化思维战胜拖延症">
-                游戏化思维战胜拖延症 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/18/编程那点事儿-Markdown Notes/" rel="prev" title="Markdown Notes">
+                Markdown Notes <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -806,7 +811,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#域名注册及解析"><span class="nav-number">1.</span> <span class="nav-text">域名注册及解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-Public-Key-公钥"><span class="nav-number">2.</span> <span class="nav-text">SSH Public Key 公钥</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于-coding-公钥设置"><span class="nav-number">2.1.</span> <span class="nav-text">关于 coding 公钥设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-的主题"><span class="nav-number">3.</span> <span class="nav-text">hexo 的主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载已知主题"><span class="nav-number">3.1.</span> <span class="nav-text">下载已知主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于主题-如-NexT-UI设计"><span class="nav-number">3.2.</span> <span class="nav-text">关于主题(如 NexT )UI设计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展"><span class="nav-number">4.</span> <span class="nav-text">拓展</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#域名注册及解析"><span class="nav-number">1.</span> <span class="nav-text">域名注册及解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH-Public-Key-公钥"><span class="nav-number">2.</span> <span class="nav-text">SSH Public Key 公钥</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于-coding-公钥设置"><span class="nav-number">2.1.</span> <span class="nav-text">关于 coding 公钥设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-的主题"><span class="nav-number">3.</span> <span class="nav-text">hexo 的主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载已知主题"><span class="nav-number">3.1.</span> <span class="nav-text">下载已知主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于主题-如-NexT-UI设计"><span class="nav-number">3.2.</span> <span class="nav-text">关于主题(如 NexT )UI设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓展"><span class="nav-number">3.3.</span> <span class="nav-text">拓展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可能遇到的-bug"><span class="nav-number">3.4.</span> <span class="nav-text">可能遇到的 bug</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -830,7 +835,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-07-22</span>
+  <span itemprop="copyrightYear">2017-07-24</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
