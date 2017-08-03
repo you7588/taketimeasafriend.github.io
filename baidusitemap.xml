@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://taketimeasafriend.github.io/2016/12/18/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-07-23T20:20:16.000Z</lastmod>
+    <lastmod>2017-08-03T08:33:46.000Z</lastmod>
     <data>
         <display>
         <title>博客配置遇到的小知识点</title>
@@ -21,6 +21,92 @@
            
              
               <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2016/12/18/0-%E8%8D%89%E7%A8%BF/</loc>
+    <lastmod>2017-08-03T08:33:22.000Z</lastmod>
+    <data>
+        <display>
+        <title>这是一张草稿纸</title>
+        <pubTime>2016-12-18T05:12:33.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="测试" url="https://taketimeasafriend.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/07/15/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B9%8B%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2017-08-02T23:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>人工智能的根本 - 神经网络</title>
+        <pubTime>2017-07-14T16:36:21.000Z</pubTime>
+        
+        <tag>计算机原理</tag>
+         
+        <tag>人工智能</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/06/12/%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB-%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%85%88%E7%94%9F%E4%BC%A0/</loc>
+    <lastmod>2017-08-02T21:28:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>差不多先生传</title>
+        <pubTime>2017-06-11T17:56:21.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>文青公知</tag>
+         
+        <tag>差不多</tag>
+         
+         
+           
+             
+              <breadCrumb title="社会生活" url="https://taketimeasafriend.github.io/categories/%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/03/06/%E7%9B%8A%E6%99%BA%E6%B8%B8%E6%88%8F-%E9%AD%94%E6%96%B9/</loc>
+    <lastmod>2017-08-01T15:35:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>学习魔方-完成童年未完成的遗憾</title>
+        <pubTime>2017-03-05T16:29:39.000Z</pubTime>
+        
+        <tag>规律</tag>
+         
+        <tag>魔方</tag>
+         
+         
+           
+             
+              <breadCrumb title="益智游戏" url="https://taketimeasafriend.github.io/categories/%E7%9B%8A%E6%99%BA%E6%B8%B8%E6%88%8F/"/>
           
         </display>
     </data>
@@ -58,28 +144,6 @@
         <tag>读书</tag>
          
         <tag>Ajax</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://taketimeasafriend.github.io/2017/07/15/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B9%8B%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2017-07-22T07:19:04.000Z</lastmod>
-    <data>
-        <display>
-        <title>人工智能的根本 - 神经网络</title>
-        <pubTime>2017-07-14T16:36:21.000Z</pubTime>
-        
-        <tag>计算机原理</tag>
-         
-        <tag>人工智能</tag>
          
          
            
@@ -585,53 +649,7 @@
     
     
     
-  <url>
-    <loc>https://taketimeasafriend.github.io/2017/03/06/%E7%9B%8A%E6%99%BA%E6%B8%B8%E6%88%8F-%E9%AD%94%E6%96%B9/</loc>
-    <lastmod>2017-06-14T04:13:32.000Z</lastmod>
-    <data>
-        <display>
-        <title>学习魔方-完成童年未完成的遗憾</title>
-        <pubTime>2017-03-05T16:29:39.000Z</pubTime>
-        
-        <tag>规律</tag>
-         
-        <tag>魔方</tag>
-         
-         
-           
-             
-              <breadCrumb title="益智游戏" url="https://taketimeasafriend.github.io/categories/%E7%9B%8A%E6%99%BA%E6%B8%B8%E6%88%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
-    
-    
-  <url>
-    <loc>https://taketimeasafriend.github.io/2017/06/12/%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB-%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%85%88%E7%94%9F%E4%BC%A0/</loc>
-    <lastmod>2017-06-12T04:34:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>差不多先生传</title>
-        <pubTime>2017-06-11T17:56:21.000Z</pubTime>
-        
-        <tag>读书</tag>
-         
-        <tag>文青公知</tag>
-         
-        <tag>差不多</tag>
-         
-         
-           
-             
-              <breadCrumb title="社会生活" url="https://taketimeasafriend.github.io/categories/%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://taketimeasafriend.github.io/2017/06/05/%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB-%E4%BA%BA%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
@@ -817,24 +835,6 @@
            
              
               <breadCrumb title="TED" url="https://taketimeasafriend.github.io/categories/TED/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://taketimeasafriend.github.io/2016/12/18/0-%E8%8D%89%E7%A8%BF/</loc>
-    <lastmod>2017-05-07T18:30:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>这是一张草稿纸</title>
-        <pubTime>2016-12-18T05:12:33.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="测试" url="https://taketimeasafriend.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
           
         </display>
     </data>
