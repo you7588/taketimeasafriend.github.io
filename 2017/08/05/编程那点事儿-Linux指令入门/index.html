@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806033334_lPvEi8_2017-08-05-8.jpeg">
 <meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806034344_jQJOH5_2017-08-05-9.jpeg">
 <meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806042544_pA7AxJ_2017-08-05-10.jpeg">
-<meta property="og:updated_time" content="2017-08-05T21:04:26.000Z">
+<meta property="og:updated_time" content="2017-08-05T21:48:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给小白看的 Linux 指令">
 <meta name="twitter:description" content="UNIX-like 操作系统大行其道，可惜微软在 2014 年换 CEO 才意识到这个问题…">
@@ -486,7 +486,7 @@
 <li>登出：输入 <code>exit</code></li>
 </ul>
 <p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806031728_ZVzLxo_2017-08-05-6.jpeg" alt=""></p>
-<h2 id="Linux-档案操作"><a href="#Linux-档案操作" class="headerlink" title="Linux 档案操作"></a>Linux 档案操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录</span></div><div class="line"><span class="built_in">cd</span> <span class="comment"># 切换工作目录</span></div></pre></td></tr></table></figure>
+<h2 id="Linux-文件操作"><a href="#Linux-文件操作" class="headerlink" title="Linux 文件操作"></a>Linux 文件操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录</span></div><div class="line"><span class="built_in">cd</span> <span class="comment"># 切换工作目录</span></div></pre></td></tr></table></figure>
 <p>在 Linux 中有哪些目录呢？大概说明一下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">/ <span class="comment"># 根目录</span></div><div class="line">/home <span class="comment"># 用户目录，每个用户会有（Mac 上是 /Users）</span></div><div class="line">/etc <span class="comment"># 软件的配置文件，例如 mysql, nginx</span></div><div class="line">/var <span class="comment"># log 日志</span></div><div class="line">/usr <span class="comment"># 应用程序的安装目录（user program）</span></div><div class="line">/tmp <span class="comment"># 暂存目录，操作系统会定期清除，重开机也会清除</span></div><div class="line">~ <span class="comment"># 这个符号是用户根目录的意思，如果目前登入的用户是 root，那个 cd ~ 会前往 /root。如果目前是用 xxx 帐号登入，cd ~ 就会前往 /home/xxx/</span></div></pre></td></tr></table></figure>
 <h3 id="管理文件"><a href="#管理文件" class="headerlink" title="管理文件"></a>管理文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ls -la <span class="comment"># 显示所有文件，包含 . 开头的隐藏文件</span></div><div class="line">mkdir <span class="comment"># 新增目录</span></div><div class="line">touch <span class="comment"># 创建一个空文件</span></div><div class="line">cp <span class="comment"># 复制文件</span></div><div class="line">mv <span class="comment"># 移动文件或目录(也可以更名)</span></div><div class="line">ln <span class="_">-s</span> <span class="comment"># 建立捷径别名</span></div></pre></td></tr></table></figure>
@@ -507,7 +507,7 @@
 <p>第二个指令则是将服务器上的 <code>~/text.txt</code> 传回本机。</p>
 <p>(PS: 可以用 FTP 软件如 <a href="https://cyberduck.io/" title="Cyberduck" target="_blank" rel="external">Cyberduck</a>，通讯协议选 SFTP。)</p>
 <p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806025019_PVaPmI_2017-08-05-5.jpeg" alt=""></p>
-<h3 id="压缩和解压文件"><a href="#压缩和解压文件" class="headerlink" title="压缩和解压文件"></a>压缩和解压文件</h3><p>如果要和服务器传输很多文件，先压缩打包成一个档案再传，速度会快很多。</p>
+<h3 id="压缩和解压文件"><a href="#压缩和解压文件" class="headerlink" title="压缩和解压文件"></a>压缩和解压文件</h3><p>如果要和服务器传输很多文件，先压缩打包成一个文件再传，速度会快很多。</p>
 <p>压缩和打包是可以分开的：<code>gzip</code> 只能压缩一个文件，<code>tar</code> 可以打包整个目录顺便压缩。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">gzip <span class="comment"># 压缩文件</span></div><div class="line">gzip <span class="_">-d</span> <span class="comment"># 解压文件</span></div><div class="line">tar zcvf xxx.tar.gz xxx <span class="comment"># 将 xxx 目录打包并压缩成 xxx.tar.gz</span></div><div class="line">tar zxcf xxx.tar.gz <span class="comment"># 将 xxx.tar.gz 解压</span></div></pre></td></tr></table></figure>
 <h2 id="Linux-权限管理"><a href="#Linux-权限管理" class="headerlink" title="Linux 权限管理"></a>Linux 权限管理</h2><h3 id="增加新用户"><a href="#增加新用户" class="headerlink" title="增加新用户"></a>增加新用户</h3><p>登入服务器用的 <code>root</code> 帐号拥有最高权限，通常我们会另建一个帐号作为平常登陆管理之用。有了这个管理帐号后，就可以让 <code>root</code> 无法远端登入。（不然每台服务器默认都有 root 帐号，要破解密码只要破解 root 密码即可，很危险。）</p>
@@ -522,14 +522,39 @@
 <p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806034344_jQJOH5_2017-08-05-9.jpeg" alt=""></p>
 <p>很多时候我们只想执行一个需要 root 权限的指令，如果每次都要用 <code>su</code> 切换身份输入 root 密码太麻烦了。Linux 上有一种机制是 <code>sudo</code> 权限，可以暂时提升权限。</p>
 <p>新建的帐号没有 <code>sudo</code> 权限，下面将它加到 <code>sudo</code> 清单。</p>
-<p>新增 <code>/etc/sudoers.d/miaoxiaoge</code> 这个档案，内容是：</p>
+<p>新增 <code>/etc/sudoers.d/miaoxiaoge</code> 这个文件，内容是：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">miaoxiaoge  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
 <p>（或执行 <code>gpasswd -a miaoxiaoge sudo</code> 也可以让 miaoxiaoge 新增 sudo 权限）</p>
 <p>存盘离开。</p>
 <p>编辑 <code>root</code> 的 <code>/root/abc.txt</code>，之前如果以 <code>miaoxiaoge</code> 身份直接编辑是没有权限的。现在在指令前加上 <code>sudo</code> 即可。(<code>sudo</code> 后要再次输入自己密码，不是 <code>root</code> 的密码)</p>
 <h3 id="文件和目录的权限说明"><a href="#文件和目录的权限说明" class="headerlink" title="文件和目录的权限说明"></a>文件和目录的权限说明</h3><p>Linux 对于每个文件和目录，依据不同用户有着严格的权限控制：可否读、可否写、可否执行。</p>
 <p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806042544_pA7AxJ_2017-08-05-10.jpeg" alt=""></p>
-<p>。</p>
+<ul>
+<li>第一列：字段共 10 位，第一位表示是文件还是目录，<code>d</code> 是目录、<code>-</code> 是文件。剩下 9 位，每3位一组，第一组是文件拥有者的权限、第二组是群组(group)群限、第三组是其他用户。（ <code>r</code> 表示读、<code>w</code> 表示写入、<code>x</code> 表示可以执行，<code>-</code> 表示没有权限）</li>
+<li>第二列的 <code>root</code> 表示这个文件属于 <code>root</code> 用户，也就是文件拥有者。</li>
+<li>第三列的 <code>root</code> 表示这个文件属于 <code>root 群组(group)</code>。(默认每个用户会属于跟自己同名的群组)</li>
+<li>截图中 abc.txt 是 <code>-rw-r--r--</code> 表示这是一个文件、文件拥有者是 <code>rw-</code> 可以读写、无法执行、群组和其他人是 <code>r--</code> 表示可以读不能写入。</li>
+</ul>
+<h3 id="修改文件权限"><a href="#修改文件权限" class="headerlink" title="修改文件权限"></a>修改文件权限</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="comment"># 将文件 abc.txt 的拥有者设定为 miaoxiaoge，群组设定为 miaoxiaoge。如果要修改整个目录下文件，则可以用 chown -R</span></div><div class="line">chown miaoxiaoge:miaoxiaoge abc.txt</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 将文件 abc.txt 设定成 rw-r--r--</span></div><div class="line">chmod 644 abc.txt</div></pre></td></tr></table></figure>
+<p>这需要了解一下什么是 Octal(八进制) Permissions 表示方式：</p>
+<ul>
+<li><code>r</code> 是 4</li>
+<li><code>w</code> 是 2</li>
+<li><code>x</code> 是 1</li>
+</ul>
+<p>你要的权限就是把数字加起来，例如 <code>rw-</code> 为 4+2 = 6，<code>r--</code> 是 4。于是 <code>rw-r--r--</code> 就是 644 。</p>
+<h2 id="关于免密码登陆"><a href="#关于免密码登陆" class="headerlink" title="关于免密码登陆"></a>关于免密码登陆</h2><p>远端登入除了输入密码之外，SSH 还可以用非对称加密(Public Key Encryption)的方式来登入。</p>
+<p>在非对称加密算法中，会有两把钥匙(key)，一把叫做公钥(public key)、一把叫做密钥(private key)。</p>
+<ul>
+<li>透过公钥加密的密文，只有密钥能够解开。</li>
+<li>透过密钥加密的密文，只有公钥能够解开。</li>
+</ul>
+<p>于是我们就可以用这个机制来做登入：首先我们把自己的公钥先放在服务器上，之后登入时，服务器会送一个乱字符串给用户，用户用密钥加密后返回给服务器，如果服务器可以用公钥解回来，就表示认证成功。</p>
+<p>设定步骤如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">mkdir ~/.ssh</div><div class="line"></div><div class="line">touch ~/.ssh/authorized_keys</div><div class="line"></div><div class="line"><span class="comment"># 回到本地把公钥输出来，执行：</span></div><div class="line">cat ~/.ssh/id_rsa.pub</div><div class="line"><span class="comment"># 就会输出在画面上</span></div><div class="line"></div><div class="line"><span class="comment"># 回到远端服务器继续：</span></div><div class="line">nano ~/.ssh/authorized_keys</div><div class="line"><span class="comment"># 把公钥贴上去</span></div><div class="line"></div><div class="line">chmod 700 ~/.ssh</div><div class="line"></div><div class="line">chmod 644 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
+<p>这样就好了，你可以试试看再次登入就不用密码了。</p>
+<p><a href="http://51world.win/2017/07/02/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8A%A0%E5%AF%86%E4%B8%8E%E9%80%9A%E4%BF%A1/" title="关于非对称加密原理，戳这里。" target="_blank" rel="external">关于非对称加密原理，戳这里。</a></p>
 
       
     </div>
@@ -835,7 +860,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-档案操作"><span class="nav-number">2.</span> <span class="nav-text">Linux 档案操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#管理文件"><span class="nav-number">2.1.</span> <span class="nav-text">管理文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑和浏览文件"><span class="nav-number">2.2.</span> <span class="nav-text">编辑和浏览文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输文件"><span class="nav-number">2.3.</span> <span class="nav-text">传输文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩和解压文件"><span class="nav-number">2.4.</span> <span class="nav-text">压缩和解压文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-权限管理"><span class="nav-number">3.</span> <span class="nav-text">Linux 权限管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加新用户"><span class="nav-number">3.1.</span> <span class="nav-text">增加新用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换身份"><span class="nav-number">3.2.</span> <span class="nav-text">切换身份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件和目录的权限说明"><span class="nav-number">3.3.</span> <span class="nav-text">文件和目录的权限说明</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-文件操作"><span class="nav-number">2.</span> <span class="nav-text">Linux 文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#管理文件"><span class="nav-number">2.1.</span> <span class="nav-text">管理文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑和浏览文件"><span class="nav-number">2.2.</span> <span class="nav-text">编辑和浏览文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输文件"><span class="nav-number">2.3.</span> <span class="nav-text">传输文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩和解压文件"><span class="nav-number">2.4.</span> <span class="nav-text">压缩和解压文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-权限管理"><span class="nav-number">3.</span> <span class="nav-text">Linux 权限管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加新用户"><span class="nav-number">3.1.</span> <span class="nav-text">增加新用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换身份"><span class="nav-number">3.2.</span> <span class="nav-text">切换身份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件和目录的权限说明"><span class="nav-number">3.3.</span> <span class="nav-text">文件和目录的权限说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文件权限"><span class="nav-number">3.4.</span> <span class="nav-text">修改文件权限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于免密码登陆"><span class="nav-number">4.</span> <span class="nav-text">关于免密码登陆</span></a></li></ol></div>
             
 
           </div>
