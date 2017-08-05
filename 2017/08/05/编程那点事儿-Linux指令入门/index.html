@@ -85,16 +85,27 @@
 
 
 
-<meta name="description" content="测试">
+<meta name="description" content="UNIX-like 操作系统大行其道，可惜微软在 2014 年换 CEO 才意识到这个问题…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="给小白看的 Linux 指令">
 <meta property="og:url" content="https://taketimeasafriend.github.io/2017/08/05/编程那点事儿-Linux指令入门/index.html">
 <meta property="og:site_name" content="时间的朋友">
-<meta property="og:description" content="测试">
-<meta property="og:updated_time" content="2017-08-05T11:04:13.000Z">
+<meta property="og:description" content="UNIX-like 操作系统大行其道，可惜微软在 2014 年换 CEO 才意识到这个问题…">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806031728_ZVzLxo_2017-08-05-6.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806020719_flEDZy_2017-08-05-1.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806021223_nuhvBy_2017-08-05-2.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806021917_cCv8K0_2017-08-05-3.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806023423_fELjsm_2017-08-05-4.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806025019_PVaPmI_2017-08-05-5.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806032744_ScK8Bi_2017-08-05-7.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806033334_lPvEi8_2017-08-05-8.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806034344_jQJOH5_2017-08-05-9.jpeg">
+<meta property="og:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806042544_pA7AxJ_2017-08-05-10.jpeg">
+<meta property="og:updated_time" content="2017-08-05T21:04:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给小白看的 Linux 指令">
-<meta name="twitter:description" content="测试">
+<meta name="twitter:description" content="UNIX-like 操作系统大行其道，可惜微软在 2014 年换 CEO 才意识到这个问题…">
+<meta name="twitter:image" content="http://ogudt6aal.bkt.clouddn.com/image/20170806031728_ZVzLxo_2017-08-05-6.jpeg">
 
 
 
@@ -462,10 +473,64 @@
       
 
       
-        <blockquote class="blockquote-center">测试</blockquote>
+        <blockquote class="blockquote-center">UNIX-like 操作系统大行其道，可惜微软在 2014 年换 CEO 才意识到这个问题…</blockquote>
 
 <a id="more"></a>
-<h2 id="Linux-档案操作"><a href="#Linux-档案操作" class="headerlink" title="Linux 档案操作"></a>Linux 档案操作</h2><h2 id="Linux-权限管理"><a href="#Linux-权限管理" class="headerlink" title="Linux 权限管理"></a>Linux 权限管理</h2>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>不同操作系统有不同的 CLI 指令。</p>
+<p>由于 Mac 和 Linux 都是 <a href="https://zh.wikipedia.org/wiki/%E7%B1%BBUnix%E7%B3%BB%E7%BB%9F" title="UNIX-like" target="_blank" rel="external">UNIX-like</a> 操作系统，因此可以运行在 Linux 上的开源软件(特别是 Web 后端的软件，例如各种数据库、网站服务器、Ruby/Python/PHP 编程语言环境等) 也都支持 Mac，反而 Windows 支持比较差，CLI 指令也完全不同。这也是为什么 Web 开发者爱用 Mac 的原因，因为 Mac 接近 Linux 服务器环境。</p>
+<p>可惜微软在 2014 年换 CEO 才意识到这个问题，在 Windows 10 上推出了 <a href="https://msdn.microsoft.com/en-us/commandline/wsl/about" title="Linux Subsystem 和 Bash on Ubuntu on Windows" target="_blank" rel="external">Linux Subsystem 和 Bash on Ubuntu on Windows</a> 来试图力挽狂澜…</p>
+<p>以下介绍 Linux 相关的指令。Linux 的文件系统和 Mac 很像。</p>
+<ul>
+<li>以阿里云为例（云计算基础服务 - 弹性计算 - 云服务器 ECS）</li>
+<li>建好实例，登入主机：<code>ssh root@xx.xx.xx.xx</code>（IP）</li>
+<li>登出：输入 <code>exit</code></li>
+</ul>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806031728_ZVzLxo_2017-08-05-6.jpeg" alt=""></p>
+<h2 id="Linux-档案操作"><a href="#Linux-档案操作" class="headerlink" title="Linux 档案操作"></a>Linux 档案操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">pwd</span> <span class="comment"># 显示当前目录</span></div><div class="line"><span class="built_in">cd</span> <span class="comment"># 切换工作目录</span></div></pre></td></tr></table></figure>
+<p>在 Linux 中有哪些目录呢？大概说明一下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">/ <span class="comment"># 根目录</span></div><div class="line">/home <span class="comment"># 用户目录，每个用户会有（Mac 上是 /Users）</span></div><div class="line">/etc <span class="comment"># 软件的配置文件，例如 mysql, nginx</span></div><div class="line">/var <span class="comment"># log 日志</span></div><div class="line">/usr <span class="comment"># 应用程序的安装目录（user program）</span></div><div class="line">/tmp <span class="comment"># 暂存目录，操作系统会定期清除，重开机也会清除</span></div><div class="line">~ <span class="comment"># 这个符号是用户根目录的意思，如果目前登入的用户是 root，那个 cd ~ 会前往 /root。如果目前是用 xxx 帐号登入，cd ~ 就会前往 /home/xxx/</span></div></pre></td></tr></table></figure>
+<h3 id="管理文件"><a href="#管理文件" class="headerlink" title="管理文件"></a>管理文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ls -la <span class="comment"># 显示所有文件，包含 . 开头的隐藏文件</span></div><div class="line">mkdir <span class="comment"># 新增目录</span></div><div class="line">touch <span class="comment"># 创建一个空文件</span></div><div class="line">cp <span class="comment"># 复制文件</span></div><div class="line">mv <span class="comment"># 移动文件或目录(也可以更名)</span></div><div class="line">ln <span class="_">-s</span> <span class="comment"># 建立捷径别名</span></div></pre></td></tr></table></figure>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806020719_flEDZy_2017-08-05-1.jpeg" alt=""></p>
+<p>在截图中，先建立一个空目录是 <code>test</code>，然后创建一个文件 <code>README.txt</code>，接着复制和移动。最后用 <code>ln -s</code> 建立一个捷径别名(可以看到 abc 指向 todo.txt)。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rm <span class="comment"># 删除文件</span></div><div class="line">rm -r <span class="comment"># 删除整个目录和以下的文件</span></div></pre></td></tr></table></figure>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806021223_nuhvBy_2017-08-05-2.jpeg" alt=""></p>
+<p>截图中用 <code>rm</code> 指令删除了 <code>abc</code> 和 <code>README.txt</code>。<code>rm</code> 不能删除目录，而 <code>rmdir</code> 指令只能 <strong>删除空目录</strong>，要用 <code>rm -r</code> 指令才可以整个目录含以下的文件都删除掉。</p>
+<h3 id="编辑和浏览文件"><a href="#编辑和浏览文件" class="headerlink" title="编辑和浏览文件"></a>编辑和浏览文件</h3><p>CLI 中没有像 Atom 的 GUI 编辑器，操作系统内建的是 nano 或 vi，让我们练习一下：</p>
+<p>输入 <code>nano abc.txt</code>：</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806021917_cCv8K0_2017-08-05-3.jpeg" alt=""></p>
+<p>按 <code>control + X</code> 再按 <code>Y</code> 再按 <code>Enter</code> 就可以存盘离开。</p>
+<p>我们会需要时常在服务器上直接编辑各种配置文件。</p>
+<p>vi 和 vim 是另一套更为 geek 的文档编辑器，功能强大但比较难上手。</p>
+<h3 id="传输文件"><a href="#传输文件" class="headerlink" title="传输文件"></a>传输文件</h3><p>SSH 通信协议除了可以让我们登入远端服务器，也可以用来传输文件，又叫做 SFTP。CLI 的指令是 <code>scp</code>。</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806023423_fELjsm_2017-08-05-4.jpeg" alt=""></p>
+<p>截图中，第一个指令将本机的 <code>test.txt</code> 传到服务器上 root 帐号的 <code>~/</code> 目录。</p>
+<p>第二个指令则是将服务器上的 <code>~/text.txt</code> 传回本机。</p>
+<p>(PS: 可以用 FTP 软件如 <a href="https://cyberduck.io/" title="Cyberduck" target="_blank" rel="external">Cyberduck</a>，通讯协议选 SFTP。)</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806025019_PVaPmI_2017-08-05-5.jpeg" alt=""></p>
+<h3 id="压缩和解压文件"><a href="#压缩和解压文件" class="headerlink" title="压缩和解压文件"></a>压缩和解压文件</h3><p>如果要和服务器传输很多文件，先压缩打包成一个档案再传，速度会快很多。</p>
+<p>压缩和打包是可以分开的：<code>gzip</code> 只能压缩一个文件，<code>tar</code> 可以打包整个目录顺便压缩。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">gzip <span class="comment"># 压缩文件</span></div><div class="line">gzip <span class="_">-d</span> <span class="comment"># 解压文件</span></div><div class="line">tar zcvf xxx.tar.gz xxx <span class="comment"># 将 xxx 目录打包并压缩成 xxx.tar.gz</span></div><div class="line">tar zxcf xxx.tar.gz <span class="comment"># 将 xxx.tar.gz 解压</span></div></pre></td></tr></table></figure>
+<h2 id="Linux-权限管理"><a href="#Linux-权限管理" class="headerlink" title="Linux 权限管理"></a>Linux 权限管理</h2><h3 id="增加新用户"><a href="#增加新用户" class="headerlink" title="增加新用户"></a>增加新用户</h3><p>登入服务器用的 <code>root</code> 帐号拥有最高权限，通常我们会另建一个帐号作为平常登陆管理之用。有了这个管理帐号后，就可以让 <code>root</code> 无法远端登入。（不然每台服务器默认都有 root 帐号，要破解密码只要破解 root 密码即可，很危险。）</p>
+<p>执行 <code>adduser miaoxiaoge</code>，设定密码后，按 Enter…</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806032744_ScK8Bi_2017-08-05-7.jpeg" alt=""></p>
+<p>换身份登入后，你会发现多了个目录：</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806033334_lPvEi8_2017-08-05-8.jpeg" alt=""></p>
+<p>用现在的身份无法进入 <code>/root</code> 下，会出现 <code>Permission denied</code>，如果想进去需要切换身份。</p>
+<h3 id="切换身份"><a href="#切换身份" class="headerlink" title="切换身份"></a>切换身份</h3><p><code>su</code> 可以切换身份，例如切换成 <code>root</code> 帐号，输入密码即可。</p>
+<p>切换后，如果再输入 <code>exit</code> 则会返回之前一层的身份。</p>
+<p><code>su -</code> 的 <code>-</code> 的意思是可以把切换前的用户的环境变量带过去。</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806034344_jQJOH5_2017-08-05-9.jpeg" alt=""></p>
+<p>很多时候我们只想执行一个需要 root 权限的指令，如果每次都要用 <code>su</code> 切换身份输入 root 密码太麻烦了。Linux 上有一种机制是 <code>sudo</code> 权限，可以暂时提升权限。</p>
+<p>新建的帐号没有 <code>sudo</code> 权限，下面将它加到 <code>sudo</code> 清单。</p>
+<p>新增 <code>/etc/sudoers.d/miaoxiaoge</code> 这个档案，内容是：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">miaoxiaoge  ALL=(ALL:ALL) ALL</div></pre></td></tr></table></figure>
+<p>（或执行 <code>gpasswd -a miaoxiaoge sudo</code> 也可以让 miaoxiaoge 新增 sudo 权限）</p>
+<p>存盘离开。</p>
+<p>编辑 <code>root</code> 的 <code>/root/abc.txt</code>，之前如果以 <code>miaoxiaoge</code> 身份直接编辑是没有权限的。现在在指令前加上 <code>sudo</code> 即可。(<code>sudo</code> 后要再次输入自己密码，不是 <code>root</code> 的密码)</p>
+<h3 id="文件和目录的权限说明"><a href="#文件和目录的权限说明" class="headerlink" title="文件和目录的权限说明"></a>文件和目录的权限说明</h3><p>Linux 对于每个文件和目录，依据不同用户有着严格的权限控制：可否读、可否写、可否执行。</p>
+<p><img src="http://ogudt6aal.bkt.clouddn.com/image/20170806042544_pA7AxJ_2017-08-05-10.jpeg" alt=""></p>
+<p>。</p>
+
       
     </div>
 
@@ -770,7 +835,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-档案操作"><span class="nav-number">1.</span> <span class="nav-text">Linux 档案操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-权限管理"><span class="nav-number">2.</span> <span class="nav-text">Linux 权限管理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-档案操作"><span class="nav-number">2.</span> <span class="nav-text">Linux 档案操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#管理文件"><span class="nav-number">2.1.</span> <span class="nav-text">管理文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑和浏览文件"><span class="nav-number">2.2.</span> <span class="nav-text">编辑和浏览文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输文件"><span class="nav-number">2.3.</span> <span class="nav-text">传输文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压缩和解压文件"><span class="nav-number">2.4.</span> <span class="nav-text">压缩和解压文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-权限管理"><span class="nav-number">3.</span> <span class="nav-text">Linux 权限管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#增加新用户"><span class="nav-number">3.1.</span> <span class="nav-text">增加新用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切换身份"><span class="nav-number">3.2.</span> <span class="nav-text">切换身份</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件和目录的权限说明"><span class="nav-number">3.3.</span> <span class="nav-text">文件和目录的权限说明</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -794,7 +859,7 @@
   
   更新于<i class="fa fa-clock-o" aria-hidden="true"></i>
   
-  <span itemprop="copyrightYear">2017-08-05</span>
+  <span itemprop="copyrightYear">2017-08-06</span>
   <span class="with-love">
     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
   </span>
