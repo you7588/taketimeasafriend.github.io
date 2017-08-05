@@ -4,8 +4,54 @@
 
     
   <url>
+    <loc>https://taketimeasafriend.github.io/2017/08/05/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Linux%E6%8C%87%E4%BB%A4%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2017-08-05T11:04:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>给小白看的 Linux 指令</title>
+        <pubTime>2017-08-05T11:36:21.000Z</pubTime>
+        
+        <tag>CLI</tag>
+         
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/07/02/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E6%B5%85%E5%85%A5%E6%B5%85%E5%87%BA%E5%91%BD%E4%BB%A4%E8%A1%8C/</loc>
+    <lastmod>2017-08-05T11:04:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>浅入浅出命令行</title>
+        <pubTime>2017-07-01T16:36:21.000Z</pubTime>
+        
+        <tag>配置</tag>
+         
+        <tag>工具</tag>
+         
+        <tag>CLI</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://taketimeasafriend.github.io/2017/07/28/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2017-08-03T21:55:03.000Z</lastmod>
+    <lastmod>2017-08-05T02:39:40.000Z</lastmod>
     <data>
         <display>
         <title>Head First 软件开发</title>
@@ -495,30 +541,6 @@
         <tag>读书</tag>
          
         <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://taketimeasafriend.github.io/2017/07/02/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-%E6%B5%85%E5%85%A5%E6%B5%85%E5%87%BA%E5%91%BD%E4%BB%A4%E8%A1%8C/</loc>
-    <lastmod>2017-07-01T23:58:24.000Z</lastmod>
-    <data>
-        <display>
-        <title>浅入浅出命令行</title>
-        <pubTime>2017-07-01T16:36:21.000Z</pubTime>
-        
-        <tag>配置</tag>
-         
-        <tag>工具</tag>
-         
-        <tag>CLI</tag>
          
          
            
