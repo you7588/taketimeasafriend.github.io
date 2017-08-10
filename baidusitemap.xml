@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://taketimeasafriend.github.io/2017/07/28/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Head%20First%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2017-08-10T10:05:59.000Z</lastmod>
+    <lastmod>2017-08-10T19:48:21.000Z</lastmod>
     <data>
         <display>
         <title>Head First 软件开发</title>
@@ -14,6 +14,60 @@
         <tag>读书</tag>
          
         <tag>软件开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/08/11/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Mac%E5%8F%8A%E5%85%B6%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <lastmod>2017-08-10T19:47:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>程序员使用Mac笔记（二）</title>
+        <pubTime>2017-08-11T12:36:21.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>mpv</tag>
+         
+        <tag>G点</tag>
+         
+        <tag>配置</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://taketimeasafriend.github.io/2017/02/19/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Mac%E5%8F%8A%E5%85%B6%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-08-10T18:27:30.000Z</lastmod>
+    <data>
+        <display>
+        <title>程序员使用Mac笔记</title>
+        <pubTime>2017-02-19T12:01:47.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+        <tag>mpv</tag>
+         
+        <tag>G点</tag>
+         
+        <tag>Spotlight</tag>
+         
+        <tag>配置</tag>
          
          
            
@@ -1236,34 +1290,6 @@
         <tag>hexo</tag>
          
         <tag>next</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程那点事儿" url="https://taketimeasafriend.github.io/categories/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://taketimeasafriend.github.io/2017/02/19/%E7%BC%96%E7%A8%8B%E9%82%A3%E7%82%B9%E4%BA%8B%E5%84%BF-Mac%E5%8F%8A%E5%85%B6%E8%BD%AF%E4%BB%B6%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-04-10T20:06:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>程序员使用Mac笔记</title>
-        <pubTime>2017-02-19T12:01:47.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-        <tag>mpv</tag>
-         
-        <tag>G点</tag>
-         
-        <tag>Spotlight</tag>
-         
-        <tag>配置</tag>
          
          
            
